@@ -1,0 +1,36 @@
+{
+  "docs": {
+    "Getting Started": [
+      "intro/creating-account", 
+      "intro/adding-smart-contract", 
+      "intro/viewing-activity", 
+      "intro/creating-org-folder"
+    ],
+    "Wallet management & address book dApp tool": [
+      "wallet/adding-wallet",
+      "wallet/signing-transaction",
+      "wallet/saving-address"
+    ],
+    "Identity Creation (ERC-721 proxy identity)": [
+      "erc/create-erc-identity",
+      "erc/wallet-signatory",
+      "erc/active-wisi",
+      "erc/sign-transaction-wisi"
+    ],
+    "Permissions dApp tool": [
+      "dAppTool/adding-id",
+      "dAppTool/adding-members",
+      "dAppTool/manage-permission-access"
+    ],
+    "Web3 Hooks": [
+      "web3/web3-hooks-creation"
+    ],
+    "APIs": [
+      "apis/apis-creation",
+      "apis/apis-wisi"
+    ]
+  },
+  "docs-other": {
+    "First Category": ["doc4", "doc5"]
+  }
+}
