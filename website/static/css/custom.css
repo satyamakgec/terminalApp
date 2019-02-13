@@ -15,6 +15,13 @@
 @media only screen and (min-width: 1500px) {
 }
 
+@import url('https://fonts.googleapis.com/css?family=Gruppo');
+
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !important;
+}
+
 .fixedHeaderContainer{
     background-color: #333;
 }
@@ -28,8 +35,88 @@
     background-color: #777;
 }
 
+/* Sidebar section */
+
+.toc .toggleNav{
+    padding-right: 5px;
+}
+
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  ::-webkit-scrollbar-corner{
+      border: 5px;
+  }
+
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+.toc .toggleNav ul li a:hover, .toc .toggleNav ul li a:focus {
+    color: rgb(97, 107, 102);
+}
+
+.toc .toggleNav ul {
+    padding: 0 0px;
+}
+
+.toc .toggleNav ul li.navListItemActive a {
+    color: rgb(89, 97, 93);
+    color: #304de9;
+    border-left: 3px solid #304de9;
+    font-weight: 600;
+}
+
+.toc .toggleNav ul li a.active{
+    
+}
+
+
 .toc .toggleNav ul li a{
-    margin-left: 18px;
+    padding: 1px 0px 2px 17px;
     font-size: 13px;
     color: #333;
+    line-height: 22px;
+}
+
+@media only screen and (min-width: 1024px){
+    .separateOnPageNav .wrapper, .separateOnPageNav .headerWrapper.wrapper {
+        /* max-width: 1400px; */
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .separateOnPageNav .wrapper, .separateOnPageNav .headerWrapper.wrapper {
+        max-width: 100%;
+    }
+}
+
+.wrapper {
+    margin: 0px auto;
+    max-width: 100%;
+    padding: 0 0px;
+}
+
+.toc .toggleNav .navGroup .navGroupCategoryTitle {
+    padding-left: 20px;
+}
+
+/* Page tutorial */
+.mainContainer .wrapper .post{
+    padding: 0 5rem;
 }

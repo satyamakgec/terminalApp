@@ -20,7 +20,7 @@ const users = [
 const siteConfig = {
   title: 'Terminal', // Title for your website.
   tagline: 'A terminal website',
-  url: 'https://your-docusaurus-test-site.com', // Your website URL
+  url: 'https://terminal.co', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
@@ -36,7 +36,8 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'intro/creating-account', label: 'Docs'},
-    {doc: 'apis/apis-creation', label: 'Tutorials'},
+    // {doc: 'apis/apis-creation', label: 'Tutorials'},
+    {page: 'tutorials', label: 'Tutorials'},
     {page: 'help', label: 'Support'},
     {blog: true, label: 'Community'},
   ],
