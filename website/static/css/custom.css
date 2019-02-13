@@ -18,12 +18,12 @@
 @import url('https://fonts.googleapis.com/css?family=Gruppo');
 
 body{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !important;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
 }
 
 .fixedHeaderContainer{
     background-color: #333;
+    padding: 9px 20px;
 }
 
 .toc .toggleNav .navGroup .navGroupCategoryTitle{
@@ -36,6 +36,10 @@ body{
 }
 
 /* Sidebar section */
+
+.separateOnPageNav .docsNavContainer{
+    flex: 0 0 350px;
+}
 
 .toc .toggleNav{
     padding-right: 5px;
@@ -88,10 +92,10 @@ body{
 
 
 .toc .toggleNav ul li a{
-    padding: 1px 0px 2px 17px;
+    padding: 1px 0px 2px 30px;
     font-size: 13px;
     color: #333;
-    line-height: 22px;
+    line-height: 28px;
 }
 
 @media only screen and (min-width: 1024px){
