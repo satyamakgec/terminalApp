@@ -38,7 +38,7 @@ const siteConfig = {
     {doc: 'intro/creating-account', label: 'Docs'},
     // {doc: 'apis/apis-creation', label: 'Tutorials'},
     {page: 'tutorials', label: 'Tutorials'},
-    {page: 'help', label: 'Support'},
+    {page: 'support', label: 'Support'},
     {blog: true, label: 'Community'},
   ],
 

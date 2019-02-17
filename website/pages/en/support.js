@@ -42,7 +42,11 @@ function Help(props) {
         <div className="post">
           <header className="postHeader">
             <h1>Need help?</h1>
+            {/* <iframe src="http://embed.stackoverflow.com/a/23776447/851498"></iframe> */}
+            {/* <iframe src="http://embed.stackoverflow.com"></iframe> */}
           </header>
+          <h2>Ask on Gitter</h2><br/>
+            <iframe className="iframe-gitter" src="https://gitter.im/gitterHQ/gitter/~embed"></iframe>
           <p>This project is maintained by a dedicated group of people.</p>
           <GridBlock contents={supportLinks} layout="threeColumn" />
         </div>
