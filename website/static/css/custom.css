@@ -135,3 +135,75 @@ body{
     width: 100%;
     height: 700px;;
 }
+
+.wrapper-support{
+    padding: 0 2rem;
+}
+
+.supportLinks{
+    margin: 0 auto;
+    display: flex;
+}
+
+.supportLinks-container{
+    display: flex;
+    width: 100%;
+}
+
+.supportLinks-box{
+    flex:1 1 auto;
+    padding-top: 1rem;
+    background-color: rgb(241, 241, 241);
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    /* -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777; */
+}
+
+.supportLinks-box:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    cursor: pointer;
+  }
+
+  .supportLinks-box-link{
+      color: inherit;
+  }
+
+.supportLinks-box-img{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.supportLinks-box-heading{
+    padding-top: 8px;
+    font-size: 14px;
+}
+
+.supportLinks-gitter-pic{
+    height: 50px;
+    fill: #ed1965;
+    
+}
+
+.supportLinks-stackoverflow-pic{
+    height: 50px;
+    fill: #222426;
+}
+
+.supportLinks-github-pic{
+    height: 50px;
+    fill: #333;
+}
+
+.supportLinks-reddit-pic{
+    height: 50px;
+    fill: #ff4500;
+}
+
+.supportLinks-telegram-pic{
+    height: 50px;
+    fill: #0088cc;
+}
