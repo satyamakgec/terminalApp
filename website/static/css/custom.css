@@ -4,6 +4,13 @@
 }
 
 @media only screen and (min-width: 1024px) {
+    .docsNavContainer{
+        flex: 0 0 300px;
+    }
+
+    .docMainWrapper > * {
+        margin: 0 0px;
+    }
 }
 
 @media only screen and (max-width: 1023px) {
@@ -20,6 +27,12 @@
 body{
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
 }
+
+.mainContainer {
+   padding: 48px 20px;
+}
+
+
 
 .fixedHeaderContainer{
     background-color: #333;
@@ -44,7 +57,7 @@ body{
 }
 
 .toc .toggleNav{
-    padding-right: 5px;
+    padding-right: 15px;
 }
 
 /* Scrollbar */
@@ -126,14 +139,19 @@ body{
     padding-left: 20px;
 }
 
+/*Sidebar collapes*/
+
+.toc .toggleNav .navGroup{
+    margin-bottom: 25px;
+}
+
+.collapsible .arrow{
+    margin-right: -8px;
+}
+
 /* Page tutorial */
 .mainContainer .wrapper .post{
     padding: 0 5rem;
-}
-
-.iframe-gitter{
-    width: 100%;
-    height: 700px;;
 }
 
 .wrapper-support{
