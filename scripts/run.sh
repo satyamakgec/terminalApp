@@ -18,15 +18,15 @@ timestamp() {
 }
 
 move_index_html() {
-    git branch
+    # get back to the root directory
+    cd ..
+    git branch -a
     echo "Enter gh-pages branch....."
-    # git checkout gh-pages
+    git checkout gh-pages
     curl -o index.html https://raw.githubusercontent.com/satyamakgec/terminalApp/master/website/pages/en/index.html
 }
 
 git_push() {
-    # get back to the root directory
-    cd ..
     git add . 
     git commit -m `add index ${timestamp}`
     git push origin gh-pages
