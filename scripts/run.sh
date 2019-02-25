@@ -20,6 +20,7 @@ timestamp() {
 move_index_html() {
     # get back to the root directory
     cd ..
+    git fetch
     git branch -a
     echo "Enter gh-pages branch....."
     git checkout gh-pages
