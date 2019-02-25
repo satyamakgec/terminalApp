@@ -15,12 +15,13 @@ timestamp() {
 }
 
 move_index_html() {
-    git checkout gh-pages
+    # git checkout gh-pages
     curl -o index.html https://raw.githubusercontent.com/satyamakgec/terminalApp/master/website/pages/en/index.html
 }
 
 git_push() {
-    git add .
+    cd ..  # get back to the root directory
+    git add . 
     git commit -m `add index ${timestamp}`
     git push origin gh-pages
 }
