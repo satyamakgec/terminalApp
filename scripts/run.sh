@@ -18,9 +18,9 @@ timestamp() {
 }
 
 move_index_html() {
+    git branch
     echo "Enter gh-pages branch....."
-    git fetch
-    git checkout gh-pages
+    # git checkout gh-pages
     curl -o index.html https://raw.githubusercontent.com/satyamakgec/terminalApp/master/website/pages/en/index.html
 }
 
