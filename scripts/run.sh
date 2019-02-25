@@ -3,6 +3,10 @@
 # Exit script as soon as a command fails.
 set -o errexit
 
+cleanup() {
+    rm -rf terminalApp
+}
+
 build() {
     git config --global user.name "${GH_NAME}"
     git config --global user.email "${GH_EMAIL}"
@@ -19,16 +23,17 @@ timestamp() {
 
 move_index_html() {
     # get back to the root directory
-    cd
-    git clone https://github.com/satyamakgec/terminalApp.git  > /dev/null 2>&1 
     echo "Enter gh-pages branch....."
+    cd
+    git clone https://${GH_NAME}:${GH_TOKEN}@github.com/satyamakgec/terminalApp.git
+    cd terminalApp
     git checkout gh-pages
     curl -o index.html https://raw.githubusercontent.com/satyamakgec/terminalApp/master/website/pages/en/index.html
 }
 
 git_push() {
     git add . 
-    git commit -m `add index ${timestamp}`
+    git commit -m "add index ${timestamp}"
     git push origin gh-pages
 }
 
@@ -39,4 +44,4 @@ git_push() {
 build
 move_index_html
 git_push
-
+cleanup
