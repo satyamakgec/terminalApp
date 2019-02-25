@@ -10,7 +10,7 @@ build() {
     cd website 
     npm install
     GIT_USER="${GH_NAME}" npm run publish-gh-pages
-    echo "Build is complete successfully"
+    echo "Build is complete successfully...."
 }
 
 timestamp() {
@@ -18,12 +18,15 @@ timestamp() {
 }
 
 move_index_html() {
+    echo "Enter gh-pages branch....."
+    git fetch
     git checkout gh-pages
     curl -o index.html https://raw.githubusercontent.com/satyamakgec/terminalApp/master/website/pages/en/index.html
 }
 
 git_push() {
-    cd ..  # get back to the root directory
+    # get back to the root directory
+    cd ..
     git add . 
     git commit -m `add index ${timestamp}`
     git push origin gh-pages
