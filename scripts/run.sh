@@ -19,9 +19,8 @@ timestamp() {
 
 move_index_html() {
     # get back to the root directory
-    cd ..
-    git fetch
-    git branch -a
+    cd
+    git clone https://github.com/satyamakgec/terminalApp.git  > /dev/null 2>&1 
     echo "Enter gh-pages branch....."
     git checkout gh-pages
     curl -o index.html https://raw.githubusercontent.com/satyamakgec/terminalApp/master/website/pages/en/index.html
