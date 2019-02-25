@@ -7,6 +7,7 @@ build() {
     cd website 
     npm install
     GIT_USER="${GH_NAME}" npm run publish-gh-pages
+    echo "Build is complete successfully"
 }
 
 timestamp() {
