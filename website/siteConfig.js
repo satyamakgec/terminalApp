@@ -12,7 +12,7 @@ const users = [
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/docusaurus.svg'.
     image: '/img/docusaurus.svg',
-    infoLink: 'https://www.facebook.com',
+    infoLink: 'https://www.terminal.com',
     pinned: true,
   },
 ];
@@ -20,15 +20,12 @@ const users = [
 const siteConfig = {
   title: 'Terminal', // Title for your website.
   tagline: 'A terminal website',
-  url: 'https://terminal.co', // Your website URL
-  baseUrl: '/', // Base URL for your project */
-  // For github.io type URLs, you would set the url and baseUrl like:
-  //   url: 'https://facebook.github.io',
-  //   baseUrl: '/test-site/',
+  url: 'https://satyamakgec.github.io', // Your website URL
+  baseUrl: '/terminal-app/', // Base URL for your project */
 
   // Used for publishing and more
-  projectName: 'terminal',
-  organizationName: 'facebook',
+  projectName: 'terminal-app',
+  organizationName: 'satyamakgec',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
