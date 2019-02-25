@@ -21,7 +21,7 @@ const siteConfig = {
   title: 'Terminal', // Title for your website.
   tagline: 'A terminal website',
   url: 'https://satyamakgec.github.io', // Your website URL
-  baseUrl: '/terminal-app/website', // Base URL for your project */
+  baseUrl: '/terminal-app/', // Base URL for your project */
 
   // Used for publishing and more
   projectName: 'terminal-app',
