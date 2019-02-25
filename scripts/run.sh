@@ -4,6 +4,8 @@
 set -o errexit
 
 build() {
+    git config --global user.name "${GH_NAME}"
+    git config --global user.email "${GH_EMAIL}"
     cd website 
     npm install
     GIT_USER="${GH_NAME}" npm run publish-gh-pages
@@ -15,7 +17,7 @@ timestamp() {
 }
 
 move_index_html() {
-    # git checkout gh-pages
+    git checkout gh-pages
     curl -o index.html https://raw.githubusercontent.com/satyamakgec/terminalApp/master/website/pages/en/index.html
 }
 
