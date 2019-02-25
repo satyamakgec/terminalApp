@@ -201,27 +201,32 @@ body{
 }
 
 .supportLinks-gitter-pic{
-    height: 50px;
-    fill: #ed1965;
+    height: 16px;
+    /* fill: #ed1965; */
+    fill: #e7e6e6;
     
 }
 
 .supportLinks-stackoverflow-pic{
-    height: 50px;
-    fill: #222426;
+    height: 16px;
+    /* fill: #222426; */
+    fill: #e7e6e6;
 }
 
 .supportLinks-github-pic{
-    height: 50px;
-    fill: #333;
+    height: 16px;
+    /* fill: #333; */
+    fill: #e7e6e6;
 }
 
 .supportLinks-reddit-pic{
-    height: 50px;
-    fill: #ff4500;
+    height: 16px;
+    /* fill: #ff4500; */
+    fill: #e7e6e6;
 }
 
 .supportLinks-telegram-pic{
     height: 50px;
-    fill: #0088cc;
+    /* fill: #0088cc; */
+    fill: #e7e6e6;
 }

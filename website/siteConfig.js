@@ -36,7 +36,7 @@ const siteConfig = {
     // {doc: 'apis/apis-creation', label: 'Tutorials'},
     {page: 'tutorials', label: 'Tutorials'},
     {page: 'support', label: 'Support'},
-    {blog: true, label: 'Community'},
+    // {blog: true, label: 'Community'},
   ],
 
   // If you have users set above, you add it here:
