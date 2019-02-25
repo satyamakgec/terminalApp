@@ -1,14 +1,12 @@
 #!/usr/bin/env bash
 
-GIT_USER="${GH_NAME}"
-
 # Exit script as soon as a command fails.
 set -o errexit
 
 build() {
     cd website 
     npm install
-    npm run publish-gh-pages
+    GIT_USER="${GH_NAME}" npm run publish-gh-pages
 }
 
 timestamp() {
