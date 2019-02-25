@@ -21,10 +21,10 @@ const siteConfig = {
   title: 'Terminal', // Title for your website.
   tagline: 'A terminal website',
   url: 'https://satyamakgec.github.io', // Your website URL
-  baseUrl: '/terminal-app/', // Base URL for your project */
+  baseUrl: '/terminalApp/', // Base URL for your project */
 
   // Used for publishing and more
-  projectName: 'terminal-app',
+  projectName: 'terminalApp',
   organizationName: 'satyamakgec',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
