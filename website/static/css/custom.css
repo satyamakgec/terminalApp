@@ -230,3 +230,166 @@ body{
     /* fill: #0088cc; */
     fill: #e7e6e6;
 }
+
+/***************Homepage******************/
+
+.headerTitleWithLogo{
+    
+}
+
+.homeContainer{
+    background-image: url('../img/header.jpg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    height: 500px;
+    background-size: cover;
+}
+
+.blockImage > img{
+    height: 60px;
+}
+
+.headerText{
+    color: #f1f1f1;
+    font-size: 2rem;
+    padding-bottom: 20px;
+    padding-top: 3rem;
+}
+
+/********************Search bar**************************/
+.searchBox{
+
+}
+
+.searchInput{
+    /* position: relative; */
+    height: 40px;
+    max-width: 601px;
+    min-width: 50%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+}
+
+.searchInput::placeholder{
+    margin-left: 10px;
+    color: #333;
+}
+
+.searchIcon{
+    color: #333;
+    position: absolute;
+    margin-top: 0px;
+    width: 40px;
+    padding: 10px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: transparent;
+    border: none;
+    margin-left: -40px;
+    cursor: pointer;
+    fill: #333;
+}
+
+
+/********************FeatureBox****************************/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.columns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.column {
+  flex: 1;
+  margin: 2px;
+  padding: 10px;
+}
+.column:first-child {
+  margin-left: 30px;
+}
+.column:last-child {
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1060px) {
+    .featureBox{
+        height: 150px;
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+  .columns .column {
+    margin-bottom: 5px;
+    flex-basis: 40%;
+  }
+  .columns .column:nth-last-child(2) {
+    margin-right: 0;
+  }
+  .columns .column:last-child {
+    flex-basis: 100%;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 680px) {
+  .columns .column {
+    flex-basis: 100%;
+    margin: 0 0 5px 0;
+  }
+}
+
+.featureBox{
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    padding: 40px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.featureBox-link{
+    color: rgb(80, 80, 80);
+}
+
+.featureBox-link:hover{
+    color: rgb(82, 82, 82);
+}
+
+.featureBox-pic{
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.featureBox-pic-rocket{
+    width: 35%;
+}
+
+.featureBox-pic-book{
+    width: 35%;
+}
+
+.featureBox-title{
+    margin: 0 auto;
+}
+
+/***********************************Tutorial Page*******************************************/
+.tutorial-contribute{
+    cursor: pointer;
+    color: #363835;
+    position: absolute;
+    top:5px;
+    right:10%;
+    padding:10px 20px;
+    border-radius:15px;
+    border:none;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.tutorial-contribute:hover{
+    color: inherit;
+}

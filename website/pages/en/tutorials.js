@@ -19,22 +19,6 @@ function Help(props) {
   const langPart = `${language ? `${language}/` : ''}`;
   const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
 
-  // const supportLinks = [
-  //   {
-  //     content: `Learn more using the [documentation on this site.](${docUrl(
-  //       'doc1.html',
-  //     )})`,
-  //     title: 'Browse Docs',
-  //   },
-  //   {
-  //     content: 'Ask questions about the documentation and project',
-  //     title: 'Join the community',
-  //   },
-  //   {
-  //     content: "Find out what's new with this project",
-  //     title: 'Stay up to date',
-  //   },
-  // ];
 
   return (
     <div className="docMainWrapper wrapper">
@@ -44,6 +28,7 @@ function Help(props) {
             <h1>Tutorials</h1>
           </header>
           <p>Tutorials on this page</p>
+          <a href="https://amitnirala.typeform.com/to/B86TE9" target="_blank" className="tutorial-contribute">Contribute a Tutorial</a>
           {/* <GridBlock contents={supportLinks} layout="threeColumn" /> */}
         </div>
       </Container>
