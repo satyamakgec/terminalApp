@@ -393,3 +393,33 @@ body{
 .tutorial-contribute:hover{
     color: inherit;
 }
+
+.tutorialContainer{
+
+}
+
+.tutorialBox{
+    padding: 25px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.tutorialHeading{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.tutorialDesc{
+    padding-bottom: 10px;
+}
+
+.tutorialDetails{
+    font-size: 13px;
+}
+
+.tutorialDetailsName{
+    font-weight: 500;
+}
+
+.tutorialDetailsDate{
+    font-weight: 500;
+}
