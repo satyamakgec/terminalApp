@@ -82,7 +82,7 @@ const siteConfig = {
   scripts: ['https://buttons.github.io/buttons.js'],
 
   // On page navigation for the current documentation page.
-  // onPageNav: 'separate',
+  onPageNav: 'separate',
   // No .html extensions for paths.
   cleanUrl: true,
 
@@ -102,23 +102,3 @@ const siteConfig = {
 };
 
 module.exports = siteConfig;
-
-// function typeform() {
-//   const request = require('request');
-
-//   request.get('https://api.typeform.com/forms/B86TE9/responses?since=2019-03-01T00%3A00%3A00&until=2020-07-10T00%3A00%3A00', {
-//     'auth': {
-//       'user': 'amitnirala3@gmail.com',
-//       'pass': 'qwerty@123',
-//       'bearer': 'Bsrmv6JH1JyZAXkk4LRhE7XsytP4x5oZkfXZQCGkUH56'
-//     }
-//   }, function(err, response, body) {
-//     return body;  
-//     // console.log(body);
-//   });
-// }
-
-
-// const typeformData = "Hello";
-// console.log(typeformData);
-

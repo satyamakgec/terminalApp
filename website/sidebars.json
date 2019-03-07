@@ -28,6 +28,12 @@
     "APIs": [
       "apis/apis-creation",
       "apis/apis-wisi"
+    ],
+    "Custom APIs": [
+      "customapis/customapis-creation"
+    ],
+    "Terminal Marketplace": [
+      "terminalmarketplace/terminalmarketplace-goto"
     ]
   },
   "docs-other": {
