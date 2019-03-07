@@ -5,6 +5,10 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+// var jQueryScript = document.createElement('script');  
+// jQueryScript.setAttribute('src','https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js');
+// document.head.appendChild(jQueryScript);
+
 const React = require('react');
 
 const CompLibrary = require('../../core/CompLibrary.js');
