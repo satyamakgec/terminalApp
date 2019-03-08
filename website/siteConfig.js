@@ -36,7 +36,7 @@ const siteConfig = {
     {doc: 'intro/creating-account', label: 'Docs'},
     // {doc: 'apis/apis-creation', label: 'Tutorials'},
     {page: 'tutorials', label: 'Tutorials'},
-    {page: 'support', label: 'Support'},
+    {href: 'http://secureblocks.io', label: 'Support'},
     // {blog: true, label: 'Community'},
   ],
 
