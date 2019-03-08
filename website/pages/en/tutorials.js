@@ -5,10 +5,6 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-// var jQueryScript = document.createElement('script');  
-// jQueryScript.setAttribute('src','https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js');
-// document.head.appendChild(jQueryScript);
-
 const React = require('react');
 
 const CompLibrary = require('../../core/CompLibrary.js');
@@ -48,3 +44,32 @@ function Help(props) {
 }
 
 module.exports = Help;
+
+const request = require('request');
+
+function typeform() {
+    return new Promise((reject, resolve) => {
+        request.get('https://api.typeform.com/forms/B86TE9/responses', {
+        'auth': {
+            'user': 'amitnirala3@gmail.com',
+            'pass': 'qwerty@123',
+            'bearer': 'Bsrmv6JH1JyZAXkk4LRhE7XsytP4x5oZkfXZQCGkUH56'
+        }
+        }, function(err, response, body) {
+            if (err)
+                return reject("error");
+            else
+                return resolve(body);
+        });
+    });
+};
+
+function getApiResult() {
+    typeform().then((result) => {
+        console.log(result);
+    }).catch((err) => {
+        console.log(err);
+    })
+}
+
+getApiResult();
