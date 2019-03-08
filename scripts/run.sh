@@ -42,6 +42,6 @@ git_push() {
 # }
 
 build
-move_index_html
-git_push
+# move_index_html
+# git_push
 cleanup
