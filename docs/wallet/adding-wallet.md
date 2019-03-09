@@ -9,12 +9,12 @@ sidebar_label: Adding wallet
 
 To add a new wallet, please navigate back to your dashboard and click the blue “Add” button in the top left corner as you did when you added your first smart contract to your account.
 
-//walleta1.png
+ ![login](assets/images/wallet/walleta1.png)
 
 
 Next, we must fill in the following inputs in order to get our wallet linked successfully: 
 
-//walleta2.png
+![login](assets/images/wallet/walleta2.png)
 
 1. Name of Wallet 
 2. Address of the wallet 
@@ -24,11 +24,11 @@ Next, we must fill in the following inputs in order to get our wallet linked suc
 Once confirmed, please click “Create”. 
 The Wallet should show up on the Web 3 Object dashboard just like when you added your first smart contract to the platform. 
 
-//walleta3.png
+![login](assets/images/wallet/walleta3.png)
 
 Next, we will check how we can manage the newly uploaded wallet. Click on the wallet under Web 3 Objects. You can see that there are two options to interact and manage your wallet; Overview and Activity. We will just display the Overview section for you as Activity is currently being finalized for the platform. 
 
-//walleta4.png
+![login](assets/images/wallet/walleta4.png)
 
 As you can see, the Overview tells you the details of your wallet, such as: 
 1. Your wallet balance
