@@ -5,24 +5,43 @@ sidebar_label: Adding wallet
 ---
 
 
-## Lorem
+## Adding a Wallet
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.
+To add a new wallet, please navigate back to your dashboard and click the blue “Add” button in the top left corner as you did when you added your first smart contract to your account.
 
-## Mauris In Code
+//walleta1.png
 
-```
-Mauris vestibulum ullamcorper nibh, ut semper purus pulvinar ut. Donec volutpat orci sit amet mauris malesuada, non pulvinar augue aliquam. Vestibulum ultricies at urna ut suscipit. Morbi iaculis, erat at imperdiet semper, ipsum nulla sodales erat, eget tincidunt justo dui quis justo. Pellentesque dictum bibendum diam at aliquet. Sed pulvinar, dolor quis finibus ornare, eros odio facilisis erat, eu rhoncus nunc dui sed ex. Nunc gravida dui massa, sed ornare arcu tincidunt sit amet. Maecenas efficitur sapien neque, a laoreet libero feugiat ut.
-```
 
-## Nulla
+Next, we must fill in the following inputs in order to get our wallet linked successfully: 
 
-Nulla facilisi. Maecenas sodales nec purus eget posuere. Sed sapien quam, pretium a risus in, porttitor dapibus erat. Sed sit amet fringilla ipsum, eget iaculis augue. Integer sollicitudin tortor quis ultricies aliquam. Suspendisse fringilla nunc in tellus cursus, at placerat tellus scelerisque. Sed tempus elit a sollicitudin rhoncus. Nulla facilisi. Morbi nec dolor dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras et aliquet lectus. Pellentesque sit amet eros nisi. Quisque ac sapien in sapien congue accumsan. Nullam in posuere ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin lacinia leo a nibh fringilla pharetra.
+//walleta2.png
 
-## Orci
+1. Name of Wallet 
+2. Address of the wallet 
+3. The network this wallet holds funds on (testnet or mainnet) 
+4. The type of wallet (Terminal account wallet, MetaMask, Ledger or Other) 
 
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin venenatis lectus dui, vel ultrices ante bibendum hendrerit. Aenean egestas feugiat dui id hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur in tellus laoreet, eleifend nunc id, viverra leo. Proin vulputate non dolor vel vulputate. Curabitur pretium lobortis felis, sit amet finibus lorem suscipit ut. Sed non mollis risus. Duis sagittis, mi in euismod tincidunt, nunc mauris vestibulum urna, at euismod est elit quis erat. Phasellus accumsan vitae neque eu placerat. In elementum arcu nec tellus imperdiet, eget maximus nulla sodales. Curabitur eu sapien eget nisl sodales fermentum.
+Once confirmed, please click “Create”. 
+The Wallet should show up on the Web 3 Object dashboard just like when you added your first smart contract to the platform. 
 
-## Phasellus
+//walleta3.png
 
-Phasellus pulvinar ex id commodo imperdiet. Praesent odio nibh, sollicitudin sit amet faucibus id, placerat at metus. Donec vitae eros vitae tortor hendrerit finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque vitae purus dolor. Duis suscipit ac nulla et finibus. Phasellus ac sem sed dui dictum gravida. Phasellus eleifend vestibulum facilisis. Integer pharetra nec enim vitae mattis. Duis auctor, lectus quis condimentum bibendum, nunc dolor aliquam massa, id bibendum orci velit quis magna. Ut volutpat nulla nunc, sed interdum magna condimentum non. Sed urna metus, scelerisque vitae consectetur a, feugiat quis magna. Donec dignissim ornare nisl, eget tempor risus malesuada quis.
+Next, we will check how we can manage the newly uploaded wallet. Click on the wallet under Web 3 Objects. You can see that there are two options to interact and manage your wallet; Overview and Activity. We will just display the Overview section for you as Activity is currently being finalized for the platform. 
+
+//walleta4.png
+
+As you can see, the Overview tells you the details of your wallet, such as: 
+1. Your wallet balance
+2. Ether Balance in your wallet
+3. Token balance (other Erc 20 tokens) 
+4. The number of transactions that this wallet has triggered
+5. The date it was created 
+6. The type of wallet (Ethereum, Bitcoin, etc..) 
+7. Lastly, it tells you the exact wallet type (in this case MetaMask)
+
+If you wish to edit the current wallet details or delete the wallet in general, click on the three vertical dots in the top right. 
+
+
+
+
+
