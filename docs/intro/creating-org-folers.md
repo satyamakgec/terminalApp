@@ -1,10 +1,10 @@
 ---
 id: creating-org-folder
-title: Creating and organizing folders
-sidebar_label: Creating and organizing folders
+title: Creating and Organizing Folders
+sidebar_label: Creating and Organizing Folders
 ---
 
-## Creating and organizing folders
+In order to create your first folder on the Terminal platform, you must navigate over to the left side of the home page. Click on the "Add" button and select the folder option to get started
 
 ![login](assets/images/intro/introd1.png)
 

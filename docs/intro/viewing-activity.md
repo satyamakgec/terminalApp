@@ -1,28 +1,26 @@
 ---
 id: viewing-activity
-title: Viewing activity feed of smart contract
+title: Viewing the Smart Contracts Activity Feed
 sidebar_label: Viewing activity feed of smart contract
 ---
-
-## Viewing the activity feed of smart contracts (SC Dashboard- details)
 
 On the homepage dashboard, you have the option to see the ‘Overview’ section or the ‘Activity’ section. The ‘Overview’ has all of your projects, teams, smart contracts and wallets organized together. If you want a detailed list of all the activity that is going within your project and team, click the button “Activity”. 
 
  ![login](assets/images/intro/introc1.png)
 
 
-Here is an example of what a populated ‘Activity’ section can look like on Terminal:  
+**Here is an example of what a populated ‘Activity’ section can look like on Terminal:**  
 
  ![login](assets/images/intro/introc2.png)
 
 
-The overview above should give you a general idea of how your project will look like as you continue to use Terminal for your team and/or personal use. Now, let’s head back to the smart contract we uploaded earlier and explore how we can interact with it further! 
+The overview section above should give you a general idea of how your project will look like as you continue to use Terminal for your team and/or personal use. Now, head back to the smart contract you uploaded earlier so you can explore further. 
 
-After clicking on the smart contract we uploaded earlier, you can see that there is a vast amount of functionality and organizational features that Terminal offers you. 
+After clicking on the smart contract you uploaded earlier, you can see that there is a vast amount of functionality and organizational features that Terminal offers you. 
 
 ![login](assets/images/intro/introc3.png)
 
-*Note:* If you wish to edit the current smart contract details or delete the contract in general, click on the three vertical dots in the top right. 
+**Note:** If you wish to edit the current smart contract details or delete the contract in general, click on the three vertical dots in the top right. 
 
 
 ![login](assets/images/intro/introc4.png)
@@ -36,7 +34,7 @@ The ‘Functions’ tab clearly displays (in list format) all of the functions t
 ![login](assets/images/intro/introc6.png)
 
 The ‘Code’ tab provides you with some crucial information about your smart contract(s).
-1. ‘Source code status’ of your contract. This will confirm if your contract indeed has a “Verified” status. A verified status indicates that the Contract Address is verified to be on the Ethereum Blockchain.You can verify this through Etherscan on your own if you copy and paste the contract address and paste it in the search bar on https://etherscan.io/. 
+1. ‘Source code status’ of your contract. This will confirm if your contract indeed has a “Verified” status. A verified status indicates that the Contract Address is verified to be on the Ethereum Blockchain.You can verify this through Etherscan on your own if you copy and paste the contract address and paste it in the search bar on [Etherscan](https://etherscan.io/). 
 2. ‘Compiler Test:’ for your contract:
 3. Optimization Enabled 
 4. Runs (Optimiser) 
@@ -53,7 +51,7 @@ When selecting the owner address, you will have the ability to search for a spec
 
 The next step is the formal creation of your identity (below).  As shown below, the structure is ID →  Admin →  User and then there is the potential to add a Signatory (adding another Admin or User). 
 
-1. The ID:  These identity smart contracts can describe humans, groups, objects, and machines.
+1. The ID:  The ID is created from an identity smart contract. These smart contracts can represent humans, groups, objects, and even machines.
 2. The Admin can: 
 - add/remove signatories & change permission levels on this ID
 - Can call all restricted functions on all contracts owned by this ID
@@ -64,6 +62,8 @@ The next step is the formal creation of your identity (below).  As shown below, 
 
 
 ![login](assets/images/intro/introc10.png)
+
+
 
 The next step (displayed on the left) is to ‘Deploy’ the permission edits you have just assigned to your contract. Please confirm the details of your transaction before officially deploying the changes. 
 

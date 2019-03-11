@@ -4,9 +4,9 @@ title: Creating account
 sidebar_label: Creating account
 ---
 
-## Creating Your Account (Terminal.co) 
+## Getting Started
 
-The first step to get started with Terminal is to create an account. To start, please navigate to https://terminal.co. You will be prompted to login (or create an account) as displayed in the below example. 
+The first step to get started with Terminal is to create an account. To start, please navigate to [Terminal](https://terminal.co). You will be prompted to login (or create an account) as displayed in the below example. 
 
  ![login](assets/images/intro/introa1.png)
 

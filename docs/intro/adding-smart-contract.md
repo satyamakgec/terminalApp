@@ -1,10 +1,8 @@
 ---
 id: adding-smart-contract
-title: Adding smart contract
-sidebar_label: Adding smart contract ABI or Source code
+title: Adding Your Smart Contracts to the Platform
+sidebar_label: Adding Smart Contract ABI or Source code
 ---
-
-## Adding smart contract ABI or Source code (using the “Add” button)
 
 In order to add your first smart contract to the Terminal platform, you must navigate over to the left side of the home page. 
 
@@ -18,7 +16,7 @@ Please select the ‘Smart Contract’ button. Let’s now begin the process of 
 
  ![login](assets/images/intro/introb3.png)
 
-When adding a smart contract to the platform, you must fill out 4 inputs before submitting it: 
+**When adding a smart contract to the platform, you must fill out 4 inputs before submitting it:** 
 
 1. Name of the contract
 2. The contract address (deployed) 
@@ -31,11 +29,11 @@ When adding a smart contract to the platform, you must fill out 4 inputs before 
 - Other
 
 
-After submitting your smart contract, you can see it on the main dashboard page under ‘Web 3 Objects’ (highlighted in yellow below for reference). 
+After submitting your smart contract, you can see it on the main dashboard page under ‘Web 3 Objects’ (highlighted below in yellow for reference). 
 
  ![login](assets/images/intro/introb4.png)
 
-Before we go into further detail about smart contract management, we think it is important to give you a general overview of the general dashboard display and the activity feed for smart contracts and web 3 objects. 
+Before going into further detail about smart contract management on the Terminal platform, it is important to give you a general overview of the main dashboard display and the activity feed for your smart contracts and web 3 objects. 
 
 
 

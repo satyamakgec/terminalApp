@@ -1,16 +1,12 @@
 ---
 id: signing-transaction
 title: Signing Transction with a wallet
-sidebar_label: Signing Transction with a wallet
+sidebar_label: Signing Transction with a Wallet
 ---
-
-
-
-## Getting Started
 
 When prompted to sign transaction you have multiple options with the Terminal platform. You have a choice of signing with your own wallet, whether that be using a MetaMask, Nano Ledger, Terminal’s special Terminal Key or even delegating the signature to another person. 
 
-### Signing transaction with your own wallet
+### I. Signing transaction with your own wallet
 
 When clicking ‘Select’, you have a few options to choose from when signing with a wallet.  
 
@@ -49,7 +45,7 @@ Step 4: You will receive the that nice green checkmark as your WiSi signature ha
 
 ![login](assets/images/wallet/walletb8.png)
 
-Note: MetaMask and other wallets are also available for the transaction signatures displayed above but are not documented here. Please make a request in our community support section if you have any trouble getting through the transaction signature process.  
+**Note:** MetaMask and other wallets are also available for the transaction signatures displayed above but are not documented here. Please make a request in our community support section if you have any trouble getting through the transaction signature process.  
 
 ## II. Requesting a team member to sign your transaction (When an already existing signatory signs for the ID)
 

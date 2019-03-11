@@ -1,12 +1,12 @@
 ---
 id: saving-address
-title: Saving address to address book tool
-sidebar_label: Saving address to address book tool
+title: Saving An Address to The Address Book Tool
+sidebar_label: Saving An Address to The Address Book Tool
 ---
 
 ## 
 
-We have to admit, we kind of like you, so we are going to let you know about a little trick to make your life easier and save your valuable time. Instead of having to find an address each time you want to send a transaction, you can save an address from a past transaction to your address book for the next time you want to transaction with said address. 
+The Terminal platform aims to make the lives of its users easier. Throughought the platform, there are many tools to make your life easier. For this section, Terminal built tool to make interacting with repeated addresses easy. Instead of having to find an address each time you want to send a transaction, you can save an address from a past transaction to your address book for the next time you want to transaction with said address. 
 
 As seen below, there is an activity list of all the transactions that have occured within your Terminal. In order to start the process of saving an address for the future, you are going to have to click on that little purple address book within the listed transaction (reference the arrow in the below image) 
 

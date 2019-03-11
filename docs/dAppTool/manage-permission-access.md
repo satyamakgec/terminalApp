@@ -1,7 +1,7 @@
 ---
 id: manage-permission-access
-title: Manage permission access for fuctions in your contract
-sidebar_label: Manage permission access for fuctions in your contract
+title: Manage Permission Access for Fuctions in your Contracts
+sidebar_label: Manage Permission Access for Fuctions in your Contracts
 ---
 
 In order to manage specific permissions-access for functions within your contracts, you must first select the contract that you want to set up. From the contract dashboard, please navigate to the ‘Permissions’ tab, right next to the ‘Code’ tab. Below you will see a list of the functions within your contract. 

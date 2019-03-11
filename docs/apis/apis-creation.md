@@ -1,6 +1,6 @@
 ---
 id: apis-creation
-title: APIs creation
+title: APIs Creation
 ---
 
 <!-- This is a link to [another document.](doc3.md)  

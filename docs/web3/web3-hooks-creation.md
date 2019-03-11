@@ -1,7 +1,7 @@
 ---
 id: web3-hooks-creation
-title: web3 Hooks Creation
-sidebar_label: web3 Hooks Creation
+title: Web3 Hooks
+sidebar_label: Web3 Hooks
 ---
 
 ## Creation

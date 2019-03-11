@@ -1,7 +1,7 @@
 ---
 id: terminalmarketplace-goto
 title: Terminal Market Place
-sidebar_label: The go-to place for dApps to take their team’s Terminal public (this increases open source contributions.
+sidebar_label: The go-to place for dApps to take their team’s Terminal Public
 ---
 
 

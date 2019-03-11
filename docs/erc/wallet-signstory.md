@@ -4,8 +4,6 @@ title: Add your wallet as a signatory for the ID
 sidebar_label: Add your wallet as a signatory for the ID
 ---
 
-## 
-
 Before deploying your ID to the network, you must first decide what wallet you want as your signatory for the ID you are creating. Select from the wallet IDs within your address book or add a new one. Once you have finished this step, click ‘Deploy’ to officially create your ID.
 
 ![login](assets/images/erc/ercb1.png)

@@ -1,7 +1,7 @@
 ---
 id: adding-members
-title: Adding addional members or wallets to your ID
-sidebar_label: Adding addional members or wallets to your ID
+title: Adding Other Members or Wallets to an ID
+sidebar_label: Adding Other Members or Wallets to an ID
 ---
 
 To add new members (also referred to as signatories) or wallets to you ID, you will first have to select the ID you want to work with. Once you are within the ID, you can now navigate to it’s ‘Permissions’ tab. 

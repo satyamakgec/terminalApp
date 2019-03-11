@@ -1,7 +1,7 @@
 ---
 id: customapis-creation
 title: Custom APIs creation
-sidebar_label: Custom APIs creation
+sidebar_label: Custom API Creation
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 id: sign-transaction-wisi
-title: Sign a tracsation using WiSi
-sidebar_label: Sign a tracsation using WiSi
+title: Sign a Transaction using WiSi
+sidebar_label: Sign a Transaction using WiSi
 ---
 
 Signing a transaction with WiSi isn’t much different than signing a transaction with another method. Once the transaction is initiated, you will see the typical ‘Confirm & Sign’ page below: 

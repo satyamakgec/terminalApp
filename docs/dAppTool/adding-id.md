@@ -1,10 +1,8 @@
 ---
 id: adding-id
-title: Adding your ID to smart contract you own
-sidebar_label: Adding your ID to smart contract you own
+title: Adding an ID to smart contract you own
+sidebar_label: Adding an ID to a Smart Contract
 ---
-
-## Adding your ID to your contract
 
 In order to add a contract to a specific ID, you must first select one of your IDs from your main Terminal Dashboard and then click on the ‘Permissions’ tab. 
 
