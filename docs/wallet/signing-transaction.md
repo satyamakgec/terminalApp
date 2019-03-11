@@ -1,27 +1,92 @@
 ---
 id: signing-transaction
 title: Signing Transction with a wallet
-sidebar_label: Signing Transction with a wallet
+sidebar_label: Signing Transction with a Wallet
 ---
 
-## Lorem
+When prompted to sign transaction you have multiple options with the Terminal platform. You have a choice of signing with your own wallet, whether that be using a MetaMask, Nano Ledger, Terminal’s special Terminal Key or even delegating the signature to another person. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.
+### I. Signing transaction with your own wallet
 
-## Mauris In Code
+When clicking ‘Select’, you have a few options to choose from when signing with a wallet.  
 
-```
-Mauris vestibulum ullamcorper nibh, ut semper purus pulvinar ut. Donec volutpat orci sit amet mauris malesuada, non pulvinar augue aliquam. Vestibulum ultricies at urna ut suscipit. Morbi iaculis, erat at imperdiet semper, ipsum nulla sodales erat, eget tincidunt justo dui quis justo. Pellentesque dictum bibendum diam at aliquet. Sed pulvinar, dolor quis finibus ornare, eros odio facilisis erat, eu rhoncus nunc dui sed ex. Nunc gravida dui massa, sed ornare arcu tincidunt sit amet. Maecenas efficitur sapien neque, a laoreet libero feugiat ut.
-```
 
-## Nulla
+![login](assets/images/wallet/walletb1.png)
 
-Nulla facilisi. Maecenas sodales nec purus eget posuere. Sed sapien quam, pretium a risus in, porttitor dapibus erat. Sed sit amet fringilla ipsum, eget iaculis augue. Integer sollicitudin tortor quis ultricies aliquam. Suspendisse fringilla nunc in tellus cursus, at placerat tellus scelerisque. Sed tempus elit a sollicitudin rhoncus. Nulla facilisi. Morbi nec dolor dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras et aliquet lectus. Pellentesque sit amet eros nisi. Quisque ac sapien in sapien congue accumsan. Nullam in posuere ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin lacinia leo a nibh fringilla pharetra.
+**Terminal Key**
 
-## Orci
+Step 1: Enter your Terminal Password and Sign
 
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin venenatis lectus dui, vel ultrices ante bibendum hendrerit. Aenean egestas feugiat dui id hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur in tellus laoreet, eleifend nunc id, viverra leo. Proin vulputate non dolor vel vulputate. Curabitur pretium lobortis felis, sit amet finibus lorem suscipit ut. Sed non mollis risus. Duis sagittis, mi in euismod tincidunt, nunc mauris vestibulum urna, at euismod est elit quis erat. Phasellus accumsan vitae neque eu placerat. In elementum arcu nec tellus imperdiet, eget maximus nulla sodales. Curabitur eu sapien eget nisl sodales fermentum.
+![login](assets/images/wallet/walletb2.png)
 
-## Phasellus
+Step 2: Enter WiSi Two Factor Authentication 
 
-Phasellus pulvinar ex id commodo imperdiet. Praesent odio nibh, sollicitudin sit amet faucibus id, placerat at metus. Donec vitae eros vitae tortor hendrerit finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque vitae purus dolor. Duis suscipit ac nulla et finibus. Phasellus ac sem sed dui dictum gravida. Phasellus eleifend vestibulum facilisis. Integer pharetra nec enim vitae mattis. Duis auctor, lectus quis condimentum bibendum, nunc dolor aliquam massa, id bibendum orci velit quis magna. Ut volutpat nulla nunc, sed interdum magna condimentum non. Sed urna metus, scelerisque vitae consectetur a, feugiat quis magna. Donec dignissim ornare nisl, eget tempor risus malesuada quis.
+![login](assets/images/wallet/walletb3.png)
+
+Step 3: Wait for the WiSi to approve and then you will get the green checkmark as a confirmation that you have successfully signed your transaction with WiSi. 
+
+![login](assets/images/wallet/walletb4.png)
+
+**Nano Ledger**
+
+Step 1: Plug in your ledger and wait for it to successfully connect. 
+
+![login](assets/images/wallet/walletb5.png)
+
+Step 2: Once successfully connected, you will see it appear on the ledger screen as displayed below. 
+
+![login](assets/images/wallet/walletb6.png)
+
+Step 3: Please select the wallet address that you would like use and then proceed to sign the transaction. 
+
+![login](assets/images/wallet/walletb7.png)
+
+Step 4: You will receive the that nice green checkmark as your WiSi signature has been confirmed and your transaction has been successfully signed.
+
+![login](assets/images/wallet/walletb8.png)
+
+**Note:** MetaMask and other wallets are also available for the transaction signatures displayed above but are not documented here. Please make a request in our community support section if you have any trouble getting through the transaction signature process.  
+
+## II. Requesting a team member to sign your transaction (When an already existing signatory signs for the ID)
+
+
+**Sending a request to a team member**
+
+Step 1: When prompted with the ‘Confirm & Sign’ popup, you can send the transaction to someone else by click ‘Send’ icon in the bottom left corner of the popup page. 
+
+
+![login](assets/images/wallet/walletb9.png)
+
+Step 2: Enter the name or email of the user you plan to send the transaction to. It is optional but we recommend to insert a message explaining the reason behind why you are sending the transaction to this user. Click send! 
+
+![login](assets/images/wallet/walletb10.png)
+
+**Receiving a request from a team member**
+
+Step 1: So what does it look like to receive a request to sign a transaction? As you can see below the, there is a popup on top of the ‘Confirm & Sign’ page that prompts you to sign the following form manually. 
+
+The user will then have to fill in the following categories before submitting:
+
+1. Recipient Address
+2. Amount 
+3. Gas Limit
+4. Payload 
+
+![login](assets/images/wallet/walletb11.png)
+
+Step 2: Select the ‘Done’ button to submit!  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
