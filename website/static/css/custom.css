@@ -1,4 +1,5 @@
 /* your custom css */
+@import url('https://fonts.googleapis.com/css?family=Gruppo');
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
@@ -234,7 +235,9 @@ body{
 /***************Homepage******************/
 
 .headerTitleWithLogo{
-    
+    font-size: 25px !important;
+    font-weight: 700 !important;
+    font-family: 'Gruppo', cursive;
 }
 
 .homeContainer{
