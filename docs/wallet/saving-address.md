@@ -1,27 +1,33 @@
 ---
 id: saving-address
-title: Saving address to address book tool
-sidebar_label: Saving address to address book tool
+title: Saving An Address to The Address Book Tool
+sidebar_label: Saving An Address to The Address Book Tool
 ---
 
-## Lorem
+## 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.
+The Terminal platform aims to make the lives of its users easier. Throughought the platform, there are many tools to make your life easier. For this section, Terminal built tool to make interacting with repeated addresses easy. Instead of having to find an address each time you want to send a transaction, you can save an address from a past transaction to your address book for the next time you want to transaction with said address. 
 
-## Mauris In Code
+As seen below, there is an activity list of all the transactions that have occured within your Terminal. In order to start the process of saving an address for the future, you are going to have to click on that little purple address book within the listed transaction (reference the arrow in the below image) 
 
-```
-Mauris vestibulum ullamcorper nibh, ut semper purus pulvinar ut. Donec volutpat orci sit amet mauris malesuada, non pulvinar augue aliquam. Vestibulum ultricies at urna ut suscipit. Morbi iaculis, erat at imperdiet semper, ipsum nulla sodales erat, eget tincidunt justo dui quis justo. Pellentesque dictum bibendum diam at aliquet. Sed pulvinar, dolor quis finibus ornare, eros odio facilisis erat, eu rhoncus nunc dui sed ex. Nunc gravida dui massa, sed ornare arcu tincidunt sit amet. Maecenas efficitur sapien neque, a laoreet libero feugiat ut.
-```
+![login](assets/images/wallet/walletc1.png)
 
-## Nulla
+After clicking on the little purple address book, you will see a pop up box with some more  detailed information about the address that you recently transacted with such as the hyperlink to the transaction and to the contract. 
 
-Nulla facilisi. Maecenas sodales nec purus eget posuere. Sed sapien quam, pretium a risus in, porttitor dapibus erat. Sed sit amet fringilla ipsum, eget iaculis augue. Integer sollicitudin tortor quis ultricies aliquam. Suspendisse fringilla nunc in tellus cursus, at placerat tellus scelerisque. Sed tempus elit a sollicitudin rhoncus. Nulla facilisi. Morbi nec dolor dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras et aliquet lectus. Pellentesque sit amet eros nisi. Quisque ac sapien in sapien congue accumsan. Nullam in posuere ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin lacinia leo a nibh fringilla pharetra.
+![login](assets/images/wallet/walletc2.png)
 
-## Orci
+In order to continue to add the address to the address book tool, you must then click the three dots in the top right corner of that popup (as pictured below). The next popup will display the ‘Add to Address Book’ command, please click that button to proceed.
 
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin venenatis lectus dui, vel ultrices ante bibendum hendrerit. Aenean egestas feugiat dui id hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur in tellus laoreet, eleifend nunc id, viverra leo. Proin vulputate non dolor vel vulputate. Curabitur pretium lobortis felis, sit amet finibus lorem suscipit ut. Sed non mollis risus. Duis sagittis, mi in euismod tincidunt, nunc mauris vestibulum urna, at euismod est elit quis erat. Phasellus accumsan vitae neque eu placerat. In elementum arcu nec tellus imperdiet, eget maximus nulla sodales. Curabitur eu sapien eget nisl sodales fermentum.
 
-## Phasellus
+![login](assets/images/wallet/walletc3.png)
 
-Phasellus pulvinar ex id commodo imperdiet. Praesent odio nibh, sollicitudin sit amet faucibus id, placerat at metus. Donec vitae eros vitae tortor hendrerit finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque vitae purus dolor. Duis suscipit ac nulla et finibus. Phasellus ac sem sed dui dictum gravida. Phasellus eleifend vestibulum facilisis. Integer pharetra nec enim vitae mattis. Duis auctor, lectus quis condimentum bibendum, nunc dolor aliquam massa, id bibendum orci velit quis magna. Ut volutpat nulla nunc, sed interdum magna condimentum non. Sed urna metus, scelerisque vitae consectetur a, feugiat quis magna. Donec dignissim ornare nisl, eget tempor risus malesuada quis.
+The last and final step before your contract is added to your address book is to enter some information about your contact. The address should already be inputted within the Address section, so all you need to do now is put the name down for your contact and then select ‘Add’.
+
+![login](assets/images/wallet/walletc4.png)
+
+
+Below, you can now see that the contact has successfully been stored in your address books memory. If you look at the original transaction that we worked with, the once written address from the transaction is now written as ‘John Dev’. 
+
+
+![login](assets/images/wallet/walletc5.png)
+
