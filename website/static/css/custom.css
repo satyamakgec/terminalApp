@@ -1,5 +1,5 @@
 /* your custom css */
-@import url('https://fonts.googleapis.com/css?family=Gruppo');
+/* @import url('https://fonts.googleapis.com/css?family=Gruppo'); */
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
 }
@@ -23,7 +23,7 @@
 @media only screen and (min-width: 1500px) {
 }
 
-@import url('https://fonts.googleapis.com/css?family=Gruppo');
+/* @import url('https://fonts.googleapis.com/css?family=Gruppo'); */
 
 body{
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
@@ -236,8 +236,8 @@ body{
 
 .headerTitleWithLogo{
     font-size: 25px !important;
-    font-weight: 700 !important;
-    font-family: 'Gruppo', cursive;
+    font-weight: 400 !important;
+    /* font-family: 'Gruppo', cursive; */
 }
 
 .homeContainer{
