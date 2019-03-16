@@ -5,6 +5,7 @@ WORKDIR /app/website
 EXPOSE 3000 35729
 COPY ./docs /app/docs
 COPY ./website /app/website
-RUN yarn install
+COPY entrypoint.sh /root/entrypoint.sh
+RUN chmod +x /root/entrypoint.sh
 
-CMD ["yarn", "start"]
+ENTRYPOINT [ "/root/entrypoint.sh" ]

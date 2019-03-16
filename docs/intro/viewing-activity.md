@@ -1,27 +1,81 @@
 ---
 id: viewing-activity
-title: Viewing activity feed of smart contract
+title: Viewing the Smart Contracts Activity Feed
 sidebar_label: Viewing activity feed of smart contract
 ---
 
-## Lorem
+On the homepage dashboard, you have the option to see the ‘Overview’ section or the ‘Activity’ section. The ‘Overview’ has all of your projects, teams, smart contracts and wallets organized together. If you want a detailed list of all the activity that is going within your project and team, click the button “Activity”. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.
+ ![login](assets/images/intro/introc1.png)
 
-## Mauris In Code
 
-```
-Mauris vestibulum ullamcorper nibh, ut semper purus pulvinar ut. Donec volutpat orci sit amet mauris malesuada, non pulvinar augue aliquam. Vestibulum ultricies at urna ut suscipit. Morbi iaculis, erat at imperdiet semper, ipsum nulla sodales erat, eget tincidunt justo dui quis justo. Pellentesque dictum bibendum diam at aliquet. Sed pulvinar, dolor quis finibus ornare, eros odio facilisis erat, eu rhoncus nunc dui sed ex. Nunc gravida dui massa, sed ornare arcu tincidunt sit amet. Maecenas efficitur sapien neque, a laoreet libero feugiat ut.
-```
+**Here is an example of what a populated ‘Activity’ section can look like on Terminal:**  
 
-## Nulla
+ ![login](assets/images/intro/introc2.png)
 
-Nulla facilisi. Maecenas sodales nec purus eget posuere. Sed sapien quam, pretium a risus in, porttitor dapibus erat. Sed sit amet fringilla ipsum, eget iaculis augue. Integer sollicitudin tortor quis ultricies aliquam. Suspendisse fringilla nunc in tellus cursus, at placerat tellus scelerisque. Sed tempus elit a sollicitudin rhoncus. Nulla facilisi. Morbi nec dolor dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras et aliquet lectus. Pellentesque sit amet eros nisi. Quisque ac sapien in sapien congue accumsan. Nullam in posuere ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin lacinia leo a nibh fringilla pharetra.
 
-## Orci
+The overview section above should give you a general idea of how your project will look like as you continue to use Terminal for your team and/or personal use. Now, head back to the smart contract you uploaded earlier so you can explore further. 
 
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin venenatis lectus dui, vel ultrices ante bibendum hendrerit. Aenean egestas feugiat dui id hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur in tellus laoreet, eleifend nunc id, viverra leo. Proin vulputate non dolor vel vulputate. Curabitur pretium lobortis felis, sit amet finibus lorem suscipit ut. Sed non mollis risus. Duis sagittis, mi in euismod tincidunt, nunc mauris vestibulum urna, at euismod est elit quis erat. Phasellus accumsan vitae neque eu placerat. In elementum arcu nec tellus imperdiet, eget maximus nulla sodales. Curabitur eu sapien eget nisl sodales fermentum.
+After clicking on the smart contract you uploaded earlier, you can see that there is a vast amount of functionality and organizational features that Terminal offers you. 
 
-## Phasellus
+![login](assets/images/intro/introc3.png)
 
-Phasellus pulvinar ex id commodo imperdiet. Praesent odio nibh, sollicitudin sit amet faucibus id, placerat at metus. Donec vitae eros vitae tortor hendrerit finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque vitae purus dolor. Duis suscipit ac nulla et finibus. Phasellus ac sem sed dui dictum gravida. Phasellus eleifend vestibulum facilisis. Integer pharetra nec enim vitae mattis. Duis auctor, lectus quis condimentum bibendum, nunc dolor aliquam massa, id bibendum orci velit quis magna. Ut volutpat nulla nunc, sed interdum magna condimentum non. Sed urna metus, scelerisque vitae consectetur a, feugiat quis magna. Donec dignissim ornare nisl, eget tempor risus malesuada quis.
+**Note:** If you wish to edit the current smart contract details or delete the contract in general, click on the three vertical dots in the top right. 
+
+
+![login](assets/images/intro/introc4.png)
+
+The ‘Activity’ view will show you all the transactions and call that your smart contract hard been involved with in a list format like in the main page ‘Activity’ feed we just walked through. 
+
+![login](assets/images/intro/introc5.png)
+
+The ‘Functions’ tab clearly displays (in list format) all of the functions that your smart contract contains. On the tab bar to the right of the search bar, you can further categorize the functions into “All”, “Read”, and “Write” functions. Feel free to take some time to select one of the functions and play around with it before moving onto the next step. 
+
+![login](assets/images/intro/introc6.png)
+
+The ‘Code’ tab provides you with some crucial information about your smart contract(s).
+1. ‘Source code status’ of your contract. This will confirm if your contract indeed has a “Verified” status. A verified status indicates that the Contract Address is verified to be on the Ethereum Blockchain.You can verify this through Etherscan on your own if you copy and paste the contract address and paste it in the search bar on [Etherscan](https://etherscan.io/). 
+2. ‘Compiler Test:’ for your contract:
+3. Optimization Enabled 
+4. Runs (Optimiser) 
+
+![login](assets/images/intro/introc7.png)
+
+The last feature tab within your smart contract is the ‘Permissions’ tab. To better understand the idea around permissioning, let’s walk through an example of setting up your permissions for your contract. After clicking on the “Setup Permissions” button on the top right in blue, it will take you to the following form: 
+
+![login](assets/images/intro/introc8.png)
+
+When selecting the owner address, you will have the ability to search for a specific address or scroll down the drop-down menu to find it. Simply select the address that is associated with the owners and click “Continue”. 
+
+![login](assets/images/intro/introc9.png)
+
+The next step is the formal creation of your identity (below).  As shown below, the structure is ID →  Admin →  User and then there is the potential to add a Signatory (adding another Admin or User). 
+
+1. The ID:  The ID is created from an identity smart contract. These smart contracts can represent humans, groups, objects, and even machines.
+2. The Admin can: 
+- add/remove signatories & change permission levels on this ID
+- Can call all restricted functions on all contracts owned by this ID
+- Can grant/revoke permissions for non-admin users to call restricted functions on contracts owned by this ID
+3. A User can: 
+- Can be granted permission by an admin to call restricted functions on contracts owned by this ID (on a per contract or function level)
+4. Adding a Signatory - This option allows you to add other accounts to this specific contract permissions. You can later decide if you want to mark them as an Admin or as another User. 
+
+
+![login](assets/images/intro/introc10.png)
+
+
+
+The next step (displayed on the left) is to ‘Deploy’ the permission edits you have just assigned to your contract. Please confirm the details of your transaction before officially deploying the changes. 
+
+![login](assets/images/intro/introc11.png)
+
+Your permission changes have been completed! 
+
+
+
+
+
+
+
+
+
