@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <script src="./img/js/jquery-3.3.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.core.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -838,23 +839,24 @@ function getBearerData(callback) {
 
 combinedData(function(data) {
   getData(data.Bearer).then((result) => {
-    console.log(result);
-    
     let approvedArray = Object.keys(data.ApprovedTutorials).map(function(key) {
       return data.ApprovedTutorials[key];
     });
-    for (let i = 0; i < result.total_items; i++) {
+    for (let i = result.total_items - 1; i >= 0; i--) {
       for (let j = 0; j < approvedArray.length; j++) {
         if (approvedArray[j].emailId == result.items[i].answers[3].text && approvedArray[j].title == result.items[i].answers[0].text) {
+          let radioOptions = _.flattenDeep(result.items[i].answers[5].choices.labels);
           $("<div class='tutorialBoxIN'>"+
             "<a class='tutorialLink' href=" + result.items[i].answers[4].url + " target='_blank'><div class='tutorialHeading' id='tutorialHeading'> " + result.items[i].answers[0].text + "</div></a> " +
             "<div class='tutorialDesc' id='tutorialDesc'> " + result.items[i].answers[1].text + "</div> "+
-            "<div class='tutorialDetails' id='tutorialDetails'>Published by <span id='tutorialDetailsAuthor' class='tutorialDetailsAuthor'><b> " + result.items[i].answers[2].text + 
-            "</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src='./img/tag.svg' class='tutorialTag'/>&nbsp; <span className='tutorialDetailsType' id='tutorialDetailsType'><b>" +  Object.values(result.items[i].answers[5].choices) + "</b></span></div>" +
+            "<div class='tutorialDetails' id='tutorialDetails'>Published by <span id='tutorialDetailsAuthor' class='tutorialDetailsAuthor'><b> " + result.items[i].answers[2].text +
+            "</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src='./img/tag.svg' class='tutorialTag'/>&nbsp; <span className='tutorialDetailsType' id='tutorialDetailsType'><b>" +  radioOptions[0] + "</b></span></div>" +
           '</div>').appendTo('#tutorialContainer')
           }
         }
       }
+  }).catch((error)=> {
+    console.log(error);
   });
 })
 
