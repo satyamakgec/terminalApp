@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="./img/js/jquery-3.3.1.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -821,129 +822,62 @@ video {
 /* End of Footer */
   </style>
     <!-- <link rel="stylesheet" type="text/html" href="/css/main.css"> -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
 <script>
 
 
 
-// function main() {
-//   getVarifiedTutorials();
-//   // console.log(varifiedTutorials);
-// }
-
-// main();
-
-
-
 function getBearerData(callback) {
- $.getJSON('./img/code.json', function(data) {
-   dataValue = data;
-   callback(data);
- });
+  $.getJSON('./img/js/code.json', function(data) {
+    dataValue = data;
+    callback(data);
+  });
 }
 
-getBearerData(function(data) {
-//  console.log(data.Bearer);
- var settings = {
- 'async': true,
- 'crossDomain': true,
- 'url': 'https://api.typeform.com/forms/BknR0R/responses?since=2019-03-01T00%3A00%3A00&until=2020-07-10T00%3A00%3A00',
- 'method”': 'GET',
- 'headers': {
-   'authorization': `bearer ${data.Bearer}`,
- }
+combinedData(function(data) {
+  var settings = {
+      'async': true,
+      'crossDomain': true,
+      'url': 'https://api.typeform.com/forms/BknR0R/responses?since=2019-03-01T00%3A00%3A00&until=2020-07-10T00%3A00%3A00',
+      'method”': 'GET',
+      'headers': {
+        'authorization': `bearer ${data.Bearer}`,
+      }
+    }
+  let approvedArray = Object.keys(data.ApprovedTutorials).map(function(key) {
+    return data.ApprovedTutorials[key];
+  })
+  $.ajax(settings).done(function (response) {
+      for (let i = 0; i < response.total_items; i++) {
+        for (let j = 0; j < approvedArray.length; j++) {
+          if (approvedArray[j].emailId == response.items[i].answers[3].text && approvedArray[j].title == response.items[i].answers[0].text) {
+            $("<div class='tutorialBoxIN'>"+
+              "<a class='tutorialLink' href=" + response.items[i].answers[4].url + " target='_blank'><div class='tutorialHeading' id='tutorialHeading'> " + response.items[i].answers[0].text + "</div></a> " +
+              "<div class='tutorialDesc' id='tutorialDesc'> " + response.items[i].answers[1].text + "</div> "+
+              "<div class='tutorialDetails' id='tutorialDetails'>Published by <span id='tutorialDetailsAuthor' class='tutorialDetailsAuthor'><b> " + response.items[i].answers[2].text + "</b></span> ---- <span className='tutorialDetailsType' id='tutorialDetailsType'><b>" +  response.items[i].answers[5].text + "</b></span></div>" +
+            '</div>').appendTo('#tutorialContainer')
+            }
+          }
+        }
+    });
+});
+
+function combinedData(callback) {
+  getBearerData(function(data) {
+    getVerifiedTutorials(function(verifiedTutorials) {
+      callback({
+        "Bearer": data.Bearer,
+        "ApprovedTutorials": verifiedTutorials
+      });
+    })
+  })
 }
 
-$.ajax(settings).done(function (response) {
- var result = JSON.toString(response.items[0].answers[0].text);
- for (let i = 0; i < response.total_items; i++) {
- $("<div class='tutorialBoxIN'>"+
-     "<a class='tutorialLink' href=" + response.items[i].answers[4].url + " target='_blank'><div class='tutorialHeading' id='tutorialHeading'> " + response.items[i].answers[0].text + "</div></a> " +
-     "<div class='tutorialDesc' id='tutorialDesc'> " + response.items[i].answers[1].text + "</div> "+
-     "<div class='tutorialDetails' id='tutorialDetails'>Published by <span id='tutorialDetailsAuthor' class='tutorialDetailsAuthor'><b> " + response.items[i].answers[2].text + "</b></span> ---- <span className='tutorialDetailsType' id='tutorialDetailsType'><b>" +  response.items[i].answers[5].text + "</b></span></div>" +
-   '</div>').appendTo('#tutorialContainer')
- }
-//  return response;
-});
-});
-
-function getVarifiedTutorials(callback) {
- $.getJSON('./img/varifiedTutorials.json', function(data) {
-   dataValue = data;
-   callback(data);
-   return dataValue;
- });
+function getVerifiedTutorials(callback) {
+  $.getJSON('./img/js/verifiedTutorials.json', function(data) {
+    callback(data);
+  });
 }
-
-getVarifiedTutorials(function(varifiedTutorials) {
-  console.log(varifiedTutorials);
-  return varifiedTutorials;
-});
-
-
-
-// var bearer_code = 
-//     $.ajax({
-//       url: './img/allowedTutorials.json',
-//       dataType: 'json',
-//       type: 'get',
-//       cache: false,
-//       success: function(data) {
-//         // console.log(data);
-//         return data;
-//       }
-//     });
-
-  // bearer_code1 = bearer_code.responseText;
-  // var bearer_code1 = JSON.parse(bearer_code)
-  // console.log(bearer_code.responseJSON);
-
-
-  // var bearer_code = gettingBearer();
-
-  // function gettingBearer() {
-  //   $.ajax({
-  //     url: './img/allowedTutorials.json',
-  //     dataType: 'json',
-  //     type: 'get',
-  //     cache: false,
-  //     success: function(data) {
-  //       this.bearer_code = data;
-  //       return;
-  //       console.log('hello');
-  //       // console.log(data);   //Data of JSON file
-  //     }
-  //   });  
-  // }
-
-// console.log(bearer_code.gettingBearer());
-// console.log(bearer_code);
-
-
-// var settings = {
-//   "async": true,
-//   "crossDomain": true,
-//   "url": "https://api.typeform.com/forms/BknR0R/responses?since=2019-03-01T00%3A00%3A00&until=2020-07-10T00%3A00%3A00",
-//   "method": "GET",
-//   "headers": {
-//     "authorization": "bearer 0",
-//   }
-// }
-    
-// $.ajax(settings).done(function (response) {
-//   var result = JSON.toString(response.items[0].answers[0].text);
-
-//   for (let i = 0; i < response.total_items; i++) {
-
-//   $('<div class=tutorialBoxIN>'+
-//       '<a class="tutorialLink" href="'+ response.items[i].answers[4].url +'" target="_blank"><div class="tutorialHeading" id="tutorialHeading">'+ response.items[i].answers[0].text +'</div></a>'+
-//       '<div class="tutorialDesc" id="tutorialDesc">'+ response.items[i].answers[1].text +'</div>'+
-//       '<div class="tutorialDetails" id="tutorialDetails">Published by <span id="tutorialDetailsAuthor" class="tutorialDetailsAuthor"><b>'+ response.items[i].answers[2].text +'</b></span> ---- <span className="tutorialDetailsType" id="tutorialDetailsType"><b>' +  response.items[i].answers[5].text +'</b></span></div>'+
-//     '</div>').appendTo('#tutorialContainer');
-//   }
-// });
-
 
 </script>
 
