@@ -624,6 +624,14 @@ video {
     font-weight: 400;
 }
 
+.choiceList{
+  padding: 4px 8px;
+  margin: 0px 5px;
+  background-color: #333;
+  color: #f1f1f1;
+  border-radius: 5px;
+}
+
 /* Start of Footer */
 .nav-footer {
   background: #20232a;
@@ -853,16 +861,40 @@ combinedData(function(data) {
           $("<div class='tutorialBoxIN'>"+
             "<a class='tutorialLink' href=" + result.items[i].answers[4].url + " target='_blank'><div class='tutorialHeading' id='tutorialHeading'> " + result.items[i].answers[0].text + "</div></a> " +
             "<div class='tutorialDesc' id='tutorialDesc'> " + result.items[i].answers[1].text + "</div> "+
-            "<div class='tutorialDetails' id='tutorialDetails'>Published by <span id='tutorialDetailsAuthor' class='tutorialDetailsAuthor'><b> " + result.items[i].answers[2].text + 
-            "</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src='./img/tag.svg' class='tutorialTag'/>&nbsp; <span className='tutorialDetailsType' id='tutorialDetailsType'><b>" +  Object.values(result.items[i].answers[5].choices) + "</b></span> <span class='tutorialDetailsDate'> &nbsp;&nbsp;&nbsp;Posted on: " + getSubmitDate(result.items[i].submitted_at) + " </span></div>" +
+            "<div class='tutorialDetails' id='tutorialDetails'>Published by - <span id='tutorialDetailsAuthor' class='tutorialDetailsAuthor'><b> " + result.items[i].answers[2].text + 
+            "</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src='./img/tag.svg' class='tutorialTag'/><span className='tutorialDetailsType' id='tutorialDetailsType'><b>" +  getChoices(Object.values(result.items[i].answers[5].choices)) + "</b></span> <span class='tutorialDetailsDate'> &nbsp;&nbsp;&nbsp;Posted on: <b>" + getSubmitDate(result.items[i].submitted_at) + " </b></span></div>" +
           '</div>').appendTo('#tutorialContainer')
           }
         }
       }
+
+      function getChoices(data) {
+        // choices = data.length;
+        // data = toString(data);
+        data = data + "";
+        data = data.split(',');
+        console.log(data);
+        let outputData = "";
+        for(let x=0; x<data.length; x++){
+          // output = data[x];
+          output = "<span class='choiceList'>" + data[x] + "</span>";
+          // console.log(output);
+          outputData = outputData + output;
+        }
+        return outputData;
+      }
+
       function getSubmitDate(data) {
         let date = data.substring(0, data.indexOf('T'));
-        // var d = new date("date");
-        return date;
+        var year = date.substring(0, 4);
+        var month = date.substring(5,7);
+        if(date.substring(5,6) == 0){
+          month = date.substring(6,7);
+        }
+        var day = date.substring(8, 11);
+        var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
+        month = months[month];
+        return day +", "+ month +" "+ year;
       }
   });
 })
