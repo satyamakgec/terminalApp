@@ -854,7 +854,8 @@ combinedData(function(data) {
     let approvedArray = Object.keys(data.ApprovedTutorials).map(function(key) {
       return data.ApprovedTutorials[key];
     });
-    for (let i = 0; i > result.total_items; i++) {
+    console.log(result);
+    for (let i = 0; i < result.total_items; i++) {
       for (let j = approvedArray.length - 1; j >= 0; j--) {
         if (approvedArray[j].emailId == result.items[i].answers[3].text && approvedArray[j].title == result.items[i].answers[0].text) {
           let radioOptions = _.flattenDeep(result.items[i].answers[5].choices.labels);
@@ -862,7 +863,7 @@ combinedData(function(data) {
             "<a class='tutorialLink' href=" + result.items[i].answers[4].url + " target='_blank'><div class='tutorialHeading' id='tutorialHeading'> " + result.items[i].answers[0].text + "</div></a> " +
             "<div class='tutorialDesc' id='tutorialDesc'> " + result.items[i].answers[1].text + "</div> "+
             "<div class='tutorialDetails' id='tutorialDetails'>Published by - <span id='tutorialDetailsAuthor' class='tutorialDetailsAuthor'><b> " + result.items[i].answers[2].text + 
-            "</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src='./img/tag.svg' class='tutorialTag'/><span className='tutorialDetailsType' id='tutorialDetailsType'><b>" +  getChoices(Object.values(result.items[i].answers[5].choices)) + "</b></span> <span class='tutorialDetailsDate'> &nbsp;&nbsp;&nbsp;Posted on: <b>" + getSubmitDate(result.items[i].submitted_at) + " </b></span></div>" +
+            "</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span className='tutorialDetailsType' id='tutorialDetailsType'><b>" +  getChoices(Object.values(result.items[i].answers[5].choices)) + "</b></span> <span class='tutorialDetailsDate'> &nbsp;&nbsp;&nbsp;Posted on: <b>" + getSubmitDate(result.items[i].submitted_at) + " </b></span></div>" +
           '</div>').appendTo('#tutorialContainer')
           }
         }
