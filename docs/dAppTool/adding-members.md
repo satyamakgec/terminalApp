@@ -1,27 +1,26 @@
 ---
 id: adding-members
-title: Adding addional members or wallets to your ID
-sidebar_label: Adding addional members or wallets to your ID
+title: Adding Other Members or Wallets to an ID
+sidebar_label: Adding Other Members or Wallets to an ID
 ---
 
-## Lorem
+To add new members (also referred to as signatories) or wallets to you ID, you will first have to select the ID you want to work with. Once you are within the ID, you can now navigate to it’s ‘Permissions’ tab. 
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.
+ ![login](assets/images/dAppTool/dAppToolb1.png)
 
-## Mauris In Code
+In order to add new wallets or IDs to your ID, you can select the blue highlighted button titled ‘Add Signing Method’ at the bottom of your permissions tab page.
 
-```
-Mauris vestibulum ullamcorper nibh, ut semper purus pulvinar ut. Donec volutpat orci sit amet mauris malesuada, non pulvinar augue aliquam. Vestibulum ultricies at urna ut suscipit. Morbi iaculis, erat at imperdiet semper, ipsum nulla sodales erat, eget tincidunt justo dui quis justo. Pellentesque dictum bibendum diam at aliquet. Sed pulvinar, dolor quis finibus ornare, eros odio facilisis erat, eu rhoncus nunc dui sed ex. Nunc gravida dui massa, sed ornare arcu tincidunt sit amet. Maecenas efficitur sapien neque, a laoreet libero feugiat ut.
-```
+ ![login](assets/images/dAppTool/dAppToolb2.png)
 
-## Nulla
+ For the sake of this walkthrough we will be adding Daniel’s Wallet. Feel free to select or add any signing method that you want to work with. 
 
-Nulla facilisi. Maecenas sodales nec purus eget posuere. Sed sapien quam, pretium a risus in, porttitor dapibus erat. Sed sit amet fringilla ipsum, eget iaculis augue. Integer sollicitudin tortor quis ultricies aliquam. Suspendisse fringilla nunc in tellus cursus, at placerat tellus scelerisque. Sed tempus elit a sollicitudin rhoncus. Nulla facilisi. Morbi nec dolor dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras et aliquet lectus. Pellentesque sit amet eros nisi. Quisque ac sapien in sapien congue accumsan. Nullam in posuere ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin lacinia leo a nibh fringilla pharetra.
+Once selected, it will appear like the other Signing methods you have under your ID. However, it is not official until you officially apply the changes. Please select the ‘Apply’ button to do so (below): 
 
-## Orci
+ ![login](assets/images/dAppTool/dAppToolb3.png)
 
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin venenatis lectus dui, vel ultrices ante bibendum hendrerit. Aenean egestas feugiat dui id hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur in tellus laoreet, eleifend nunc id, viverra leo. Proin vulputate non dolor vel vulputate. Curabitur pretium lobortis felis, sit amet finibus lorem suscipit ut. Sed non mollis risus. Duis sagittis, mi in euismod tincidunt, nunc mauris vestibulum urna, at euismod est elit quis erat. Phasellus accumsan vitae neque eu placerat. In elementum arcu nec tellus imperdiet, eget maximus nulla sodales. Curabitur eu sapien eget nisl sodales fermentum.
+ After selecting the ‘Apply’ button you will be brought to the ‘Confirm & Sign’ popup page to finalize your changes. Sign with the correct signatory of your ID and deploy your changes to your Terminal. There it is, you have successfully added an additional wallet to your ID as a signatory.
 
-## Phasellus
+  ![login](assets/images/dAppTool/dAppToolb4.png)
 
-Phasellus pulvinar ex id commodo imperdiet. Praesent odio nibh, sollicitudin sit amet faucibus id, placerat at metus. Donec vitae eros vitae tortor hendrerit finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque vitae purus dolor. Duis suscipit ac nulla et finibus. Phasellus ac sem sed dui dictum gravida. Phasellus eleifend vestibulum facilisis. Integer pharetra nec enim vitae mattis. Duis auctor, lectus quis condimentum bibendum, nunc dolor aliquam massa, id bibendum orci velit quis magna. Ut volutpat nulla nunc, sed interdum magna condimentum non. Sed urna metus, scelerisque vitae consectetur a, feugiat quis magna. Donec dignissim ornare nisl, eget tempor risus malesuada quis.
+  Note: As you can see in this case, we selected a ‘restricted’ function and that requires an ID that has the specific permissions to sign with it. Luckily, we will be covering this in the next step.
+
