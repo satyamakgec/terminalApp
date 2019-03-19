@@ -1,5 +1,5 @@
 /* your custom css */
-/* @import url('https://fonts.googleapis.com/css?family=Gruppo'); */
+@import url('https://fonts.googleapis.com/css?family=Gruppo');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
@@ -239,8 +239,9 @@ body{
     font-size: 25px !important;
     font-weight: 300 !important;
     /* font-family: 'Open Sans', sans-serif; */
-  text-transform: uppercase;
-    font-family: 'Gruppo', cursive;
+    text-transform: uppercase;
+    font-family: "Gruppo";
+    display:none !important;
 }
 
 .homeContainer{

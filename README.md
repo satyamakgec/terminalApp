@@ -1,5 +1,14 @@
-# terminal-app
-1. git clone 
-2. cd website/
-3. npm install
-4. npm start (in website dir)
+## terminal-documentation
+
+A Web3 tool-suite for protocol and dApp developers and their communities. 
+
+# Pre-requisite
+- Node ^8.0.0
+- npm ^5.6.0 
+
+## Setup
+- `git clone https://github.com/Terminal-Systems/technical-documentation.git` 
+- `cd website`
+- `npm install`
+- `npm start`
+

@@ -20,15 +20,12 @@ const users = [
 const siteConfig = {
   title: 'Terminal', // Title for your website.
   tagline: 'A terminal website',
-  url: 'https://satyamakgec.github.io', // Your website URL
-  baseUrl: '/terminalApp/', // Base URL for your project */
+  url: 'https://docs.terminal.co', // Your website URL
+  baseUrl: '/', // Base URL for your project */
 
   // Used for publishing and more
   projectName: 'terminalApp',
-  organizationName: 'satyamakgec',
-  // For top-level user or org sites, the organization is still the same.
-  // e.g., for the https://JoelMarcey.github.io site, it would be set like...
-  //   organizationName: 'JoelMarcey'
+  organizationName: 'Terminal',
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
@@ -45,7 +42,7 @@ const siteConfig = {
 
   /* path to images for header/footer */
   headerIcon: 'img/terminal-logo.png',
-  footerIcon: 'img/terminal-logo.png',
+  footerIcon: 'img/terminal-logo-footer.png',
   favicon: 'img/favicon.png',
 
   /* Colors for website */
@@ -54,21 +51,8 @@ const siteConfig = {
     secondaryColor: '#205C3B',
   },
 
-  /* Custom fonts for website */
-  /*
-  fonts: {
-    myFont: [
-      "Times New Roman",
-      "Serif"
-    ],
-    myOtherFont: [
-      "-apple-system",
-      "system-ui"
-    ]
-  },
-  */
 
- docsSideNavCollapsible: true,
+  docsSideNavCollapsible: true,
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} Terminal.co`,
