@@ -843,7 +843,7 @@ video {
 <script>
 
 function getBearerData(callback) {
-  $.getJSON('./img/js/code.json', function(data) {
+  $.getJSON('./img/js/authenticate.json', function(data) {
     dataValue = data;
     callback(data);
   });
@@ -854,7 +854,6 @@ combinedData(function(data) {
     let approvedArray = Object.keys(data.ApprovedTutorials).map(function(key) {
       return data.ApprovedTutorials[key];
     });
-    console.log(result);
     for (let i = 0; i < result.total_items; i++) {
       for (let j = approvedArray.length - 1; j >= 0; j--) {
         if (approvedArray[j].emailId == result.items[i].answers[3].text && approvedArray[j].title == result.items[i].answers[0].text) {
@@ -870,16 +869,11 @@ combinedData(function(data) {
       }
 
       function getChoices(data) {
-        // choices = data.length;
-        // data = toString(data);
         data = data + "";
         data = data.split(',');
-        console.log(data);
         let outputData = "";
         for(let x=0; x<data.length; x++){
-          // output = data[x];
           output = "<span class='choiceList'>" + data[x] + "</span>";
-          // console.log(output);
           outputData = outputData + output;
         }
         return outputData;
@@ -942,15 +936,15 @@ function getVerifiedTutorials(callback) {
   <div class="fixedHeaderContainer">
     <div class="headerWrapper wrapper">
       <header>
-        <a href="/terminalApp/">
-          <img class="logo" src="/terminalApp/img/terminal-logo.png" alt="Terminal">
-          <h2 class="headerTitleWithLogo">Terminal</h2>
+        <a href="/">
+          <img class="logo" src="/img/terminal-logo.png" alt="Terminal">
+          <h2 class="headerTitleWithLogo"></h2>
         </a>
         <div class="navigationWrapper navigationSlider">
           <nav class="slidingNav">
             <ul class="nav-site nav-site-internal">
-              <li class=""><a href="/terminalApp/docs/intro/creating-account" target="_self" style="font-size='14px'" >Docs</a></li>
-              <li class=""><a href="/terminalApp/tutorials" target="_self">Tutorials</a></li>
+              <li class=""><a href="/docs/intro/creating-account" target="_self" style="font-size='14px'" >Docs</a></li>
+              <li class=""><a href="/tutorials" target="_self">Tutorials</a></li>
               <li class=""><a href="http://community.terminal.co" target="_self">Support</a></li>
             </ul>
           </nav>
@@ -984,8 +978,8 @@ function getVerifiedTutorials(callback) {
 
 <footer class="nav-footer" id="footer">
   <section class="sitemap">
-    <a href="/terminalApp/" class="nav-home">
-      <img src="/terminalApp/img/terminal-logo.png" alt="Terminal" width="53" height="58">
+    <a href="/" class="nav-home">
+      <img src="/img/terminal-logo-footer.png" alt="Terminal" width="53" height="58">
     </a>
     <div>
       <a href="./docs/intro/creating-account" style="font-size=14px; font-weight=600">Docs</a>
