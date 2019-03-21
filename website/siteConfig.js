@@ -37,6 +37,8 @@ const siteConfig = {
     // {blog: true, label: 'Community'},
   ],
 
+  editUrl: "https://github.com/satyamakgec/terminalApp/tree/master/docs",
+
   // If you have users set above, you add it here:
   users,
 
@@ -94,7 +96,7 @@ const siteConfig = {
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-    repoUrl: 'https://github.com/satyamakgec/terminalApp',
+    repoUrl: 'https://github.com/satyamakgec/terminalApp/tree/master/docs',
 };
 
 module.exports = siteConfig;
