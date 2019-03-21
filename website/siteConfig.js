@@ -37,7 +37,7 @@ const siteConfig = {
     // {blog: true, label: 'Community'},
   ],
 
-  editUrl: "https://github.com/satyamakgec/terminalApp/tree/master/docs",
+  editUrl: "https://github.com/satyamakgec/terminalApp/tree/master/docs/",
 
   // If you have users set above, you add it here:
   users,
