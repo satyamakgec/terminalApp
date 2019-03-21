@@ -7,12 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Terminal - Tutorials</title>
+  <link rel='icon' href='./img/favicon.png' type='image/x-icon' />
   <link href="https://fonts.googleapis.com/css?family=Gruppo" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
   <style>
 
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700');
+
 html, body{
-  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif !important;
+  font-family: 'Nunito Sans', sans-serif !important;
 }
 
 /* Reset */
@@ -236,7 +239,7 @@ video {
     body{
       padding: 0;
       margin: 0;
-      font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+      font-family: 'Nunito Sans', sans-serif;
     }
     .fixedHeaderContainer {
         background-color: #333;
@@ -270,7 +273,7 @@ video {
 }
 
 .navigationSlider .slidingNav ul {
-  background: #333;
+  background: #3d5a80;
   box-sizing: border-box;
   color: #fff;
   display: flex;
@@ -615,6 +618,7 @@ video {
 
 .tutorialDetails{
     font-size: 13px;
+    font-weight: 400;
 }
 
 .tutorialDetailsName{
@@ -851,6 +855,7 @@ function getBearerData(callback) {
 
 combinedData(function(data) {
   getData(data.Bearer).then((result) => {
+    console.log(result);
     let approvedArray = Object.keys(data.ApprovedTutorials).map(function(key) {
       return data.ApprovedTutorials[key];
     });
@@ -858,12 +863,12 @@ combinedData(function(data) {
       for (let j = approvedArray.length - 1; j >= 0; j--) {
         if (approvedArray[j].emailId == result.items[i].answers[3].text && approvedArray[j].title == result.items[i].answers[0].text) {
           let radioOptions = _.flattenDeep(result.items[i].answers[5].choices.labels);
-          $("<div class='tutorialBoxIN'>"+
-            "<a class='tutorialLink' href=" + result.items[i].answers[4].url + " target='_blank'><div class='tutorialHeading' id='tutorialHeading'> " + result.items[i].answers[0].text + "</div></a> " +
+          $("<a class='tutorialLink' href=" + result.items[i].answers[4].url + " target='_blank'><div class='tutorialBoxIN'>"+
+            "<div class='tutorialHeading' id='tutorialHeading'> " + result.items[i].answers[0].text + "</div> " +
             "<div class='tutorialDesc' id='tutorialDesc'> " + result.items[i].answers[1].text + "</div> "+
             "<div class='tutorialDetails' id='tutorialDetails'>Published by - <span id='tutorialDetailsAuthor' class='tutorialDetailsAuthor'><b> " + result.items[i].answers[2].text + 
             "</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span className='tutorialDetailsType' id='tutorialDetailsType'><b>" +  getChoices(Object.values(result.items[i].answers[5].choices)) + "</b></span> <span class='tutorialDetailsDate'> &nbsp;&nbsp;&nbsp;Posted on: <b>" + getSubmitDate(result.items[i].submitted_at) + " </b></span></div>" +
-          '</div>').appendTo('#tutorialContainer')
+          '</div></a>').appendTo('#tutorialContainer')
           }
         }
       }

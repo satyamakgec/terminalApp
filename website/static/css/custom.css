@@ -1,8 +1,60 @@
 /* your custom css */
-@import url('https://fonts.googleapis.com/css?family=Gruppo');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+/* @import url('https://fonts.googleapis.com/css?family=Gruppo');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300'); */
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700');
+
+@font-face {
+    font-family: myFont;
+    src: url(sansation_light.woff);
+  }
+
+
+/* nunito-regular - latin */
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/nunito-v10-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Nunito Regular'), local('Nunito-Regular'),
+         url('./fonts/nunito-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/nunito-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/nunito-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/nunito-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/nunito-v10-latin-regular.svg#Nunito') format('svg'); /* Legacy iOS */
+  }
+  /* nunito-600 - latin */
+  @font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./fonts/nunito-v10-latin-600.eot'); /* IE9 Compat Modes */
+    src: local('Nunito SemiBold'), local('Nunito-SemiBold'),
+         url('./fonts/nunito-v10-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/nunito-v10-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/nunito-v10-latin-600.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/nunito-v10-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/nunito-v10-latin-600.svg#Nunito') format('svg'); /* Legacy iOS */
+  }
+  /* nunito-700 - latin */
+  @font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./fonts/nunito-v10-latin-700.eot'); /* IE9 Compat Modes */
+    src: local('Nunito Bold'), local('Nunito-Bold'),
+         url('./fonts/nunito-v10-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/nunito-v10-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/nunito-v10-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/nunito-v10-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./fonts/nunito-v10-latin-700.svg#Nunito') format('svg'); /* Legacy iOS */
+  }
+
+
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+    .header_img{
+        width: 300px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -12,6 +64,9 @@
 
     .docMainWrapper > * {
         margin: 0 0px;
+    }
+    .header_img{
+        width: 350px;
     }
 }
 
@@ -24,14 +79,16 @@
 @media only screen and (min-width: 1500px) {
 }
 
-/* @import url('https://fonts.googleapis.com/css?family=Gruppo'); */
-
-body{
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+html, body{
+    /* font-family: 'Nunito Sans', sans-serif; */
+    font-family: 'Nunito' !important;
 }
 
 .mainContainer {
    padding: 48px 20px;
+   position: relative;
+   z-index: 2;
+   background-color: white;
 }
 
 
@@ -55,7 +112,7 @@ body{
 /* Sidebar section */
 
 .separateOnPageNav .docsNavContainer{
-    flex: 0 0 350px;
+    flex: 0 0 325px;
 }
 
 .toc .toggleNav{
@@ -151,9 +208,43 @@ body{
     margin-right: -8px;
 }
 
+.toc .toggleNav .navToggle
+.toc .toggleNav .navToggle:before,
+.toc .toggleNav .navToggle:after{
+    cursor: pointer;
+    border-radius: 1px;
+    height: 5px;
+    width: 35px;
+    background: white;
+    position: absolute;
+    display: block;
+    content: '';
+}
+
+.toc .toggleNav .navToggle:before{
+    top: -10px;
+}
+
+.toc .toggleNav .navToggle:after{
+    bottom: -10px;
+}
+
+
+/***********************Edit Button******************************/
+.edit-page-link{
+    color: #333;
+    border: 1px solid #333;
+}
+
+.edit-page-link:hover{
+    color: #f1f1f1;
+    background-color: #333;
+    
+}
+
 /* Page tutorial */
 .mainContainer .wrapper .post{
-    padding: 0 5rem;
+    padding: 0 3rem;
 }
 
 .wrapper-support{
@@ -245,12 +336,43 @@ body{
 }
 
 .homeContainer{
-    background-image: url('../img/header.jpg');
+    /* background-image: url('../img/header.jpg'); */
+    background-image: linear-gradient(#353535, #1B1B1B);
     background-repeat: no-repeat;
     background-position: right bottom;
-    height: 380px;
+    height: 330px;
     background-size: cover;
 }
+
+.header_img{
+    position: absolute;
+    width: 380px;
+    /* z-index: 0; */
+    top: 100px;
+    right: 0px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .header_img{
+        width: 350px;
+        top: 119px;
+    }
+}
+
+@media only screen and (max-width: 736px) {
+    .header_img{
+        width: 240px;
+        top:285px;
+    }
+}
+
+@media only screen and (max-width: 888px) {
+    .headerText{
+        font-size: 30px !important;
+    }
+}
+
+
 
 .blockImage > img{
     height: 60px;
@@ -258,14 +380,16 @@ body{
 
 .headerText{
     color: #f1f1f1;
+    position: relative;
     font-size: 2.3rem;
     padding-bottom: 20px;
     padding-top: 3rem;
+    z-index: 0;
 }
 
 /********************Search bar**************************/
 .searchBox{
-
+    position: relative;
 }
 
 .searchInput{

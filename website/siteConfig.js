@@ -37,6 +37,8 @@ const siteConfig = {
     // {blog: true, label: 'Community'},
   ],
 
+  editUrl: "https://github.com/satyamakgec/terminalApp/tree/master/docs/",
+
   // If you have users set above, you add it here:
   users,
 
@@ -48,9 +50,21 @@ const siteConfig = {
   /* Colors for website */
   colors: {
     primaryColor: '#2E8555',
-    secondaryColor: '#205C3B',
+    secondaryColor: '#3d5a80',
   },
 
+  /* Custom fonts for website */
+  /*
+  fonts: {
+    myFont: [
+      "nunito sans",
+      "Serif"
+    ],
+    // myOtherFont: [
+    //   "-apple-system",
+    //   "system-ui"
+    // ]
+  },*/
 
   docsSideNavCollapsible: true,
 
@@ -82,7 +96,7 @@ const siteConfig = {
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-  //   repoUrl: 'https://github.com/facebook/test-site',
+    repoUrl: 'https://github.com/satyamakgec/terminalApp/tree/master/docs',
 };
 
 module.exports = siteConfig;
