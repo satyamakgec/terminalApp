@@ -66,6 +66,12 @@ const siteConfig = {
     // ]
   },*/
 
+  algolia: {
+    apiKey: '2c7f3669371a5ceef0069bcb7fb1083f',
+    indexName: 'terminal_co',
+    algoliaOptions: {}, // Optional, if provided by Algolia
+  },
+
   docsSideNavCollapsible: true,
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.

@@ -1,22 +1,14 @@
 {
     "0":{
-        "title": "title 3",
-        "emailId": "mail3@gmail.com"
+        "title": "Launch On-chain Identity using ERC725",
+        "emailId": "charles@terminal.co"
     },
     "1":{
-        "title": "title 4",
-        "emailId": "mail4@gmail.com"
+        "title":"Upgradability within the smart contracts",
+        "emailId":"satyam@secureblocks.io"
     },
     "2":{
-        "title": "Solidity in the real world",
-        "emailId": "satyam0499@gmail.com"
-    },
-    "3":{
-        "title":"Dev tutorial 3",
-        "emailId":"amit3@gmail.com"
-    },
-    "4":{
-        "title":"Dev tutorial 4",
-        "emailId":"amit4@gmail.com"
+        "title":"Introduction of the EVM",
+        "emailId":"satyam@secureblocks.io"
     }
-}
+ }

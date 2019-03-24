@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <script src="./img/js/jquery-3.3.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.11/lodash.core.js"></script>
@@ -10,933 +11,28 @@
   <link rel='icon' href='./img/favicon.png' type='image/x-icon' />
   <link href="https://fonts.googleapis.com/css?family=Gruppo" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+  <link href="/css/style.css?2" rel="stylesheet">
+  <script src="/img/js/tutorial.js" data-cfasync="false" defer></script>
+
   <style>
+    @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700');
 
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700');
-
-html, body{
-  font-family: 'Nunito Sans', sans-serif !important;
-}
-
-/* Reset */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
-}
-
-
-/* Scrollbar */
-
-/* width */
-::-webkit-scrollbar {
-    width: 3px;
-  }
-
-  ::-webkit-scrollbar-corner{
-      border: 5px;
-  }
-
-  /* Track */
-::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
-
-
-/* Navbar */
-.fixedHeaderContainer {
-  background: rgb(6, 10, 8);
-  color: #fff;
-  /* min-height: 50px; */
-  padding: 8px 0;
-  position: fixed;
-  width: 100%;
-  z-index: 9999;
-  transform: translate3d(0,0,0);
-}
-
-@media only screen and (min-width: 1024px) {
-  .fixedHeaderContainer {
-    flex-shrink: 0;
-  }
-}
-
-.fixedHeaderContainer a {
-  align-items: center;
-  border: 0;
-  color: #fff;
-  display: flex;
-  flex-flow: row nowrap;
-  height: 34px;
-  z-index: 10000;
-  text-decoration: none;
-}
-
-.fixedHeaderContainer a:hover{
-  text-decoration: none;
-  color: inherit;
-}
-
-.fixedHeaderContainer header {
-  display: flex;
-  flex-flow: row nowrap;
-  position: relative;
-  text-align: left;
-}
-
-.fixedHeaderContainer header img {
-  height: 100%;
-  margin-right: 10px;
-}
-
-.fixedHeaderContainer header .headerTitle {
-  font-size: 1.25em;
-  margin: 0;
-}
-
-.fixedHeaderContainer header .headerTitleWithLogo {
-  display: block;
-  font-size: 25px;
-  font-weight: 300;
-  line-height: 18px;
-  margin: 0;
-  position: relative;
-  z-index: 9999;
-  text-transform: uppercase;
-  font-family: 'Gruppo', cursive;
-}
-
-.fixedHeaderContainer header h3 {
-  color: white;
-  font-size: 16px;
-  margin: 0;
-  margin-left: 10px;
-  text-decoration: underline;
-}
-
-@media (max-width: 480px) {
-  .headerTitle {
-    font-size: 17px;
-  }
-
-  .headerTitleWithLogo {
-    display: none !important;
-  }
-}
-
-.wrapper {
-  margin: 0px auto;
-  /* max-width: 1100px;
-  padding: 0 20px; */
-}
-@media only screen and (min-width: 1500px){
-  .wrapper {
-    /* max-width: 1400px; */
-  }
-}
-
-/**********Navbar************/
-
-    @media only screen and (min-width: 1024px){
-      .fixedHeaderContainer {
-        flex-shrink: 0;
-      }
-    }
-  
-    body{
-      padding: 0;
-      margin: 0;
-      font-family: 'Nunito Sans', sans-serif;
-    }
-    .fixedHeaderContainer {
-        background-color: #333;
-        padding: 9px 20px;
-    }
-
-    /* Navigation Slider */
-.navigationSlider .navSlideout {
-  cursor: pointer;
-  padding-top: 4px;
-  position: absolute;
-  right: 10px;
-  top: 0;
-  transition: top 0.3s;
-  z-index: 101;
-}
-
-.navigationSlider .slidingNav {
-  bottom: auto;
-  box-sizing: border-box;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-}
-
-.navigationSlider .slidingNav.slidingNavActive {
-  height: auto;
-  padding-top: 42px;
-  width: 300px;
-}
-
-.navigationSlider .slidingNav ul {
-  background: #3d5a80;
-  box-sizing: border-box;
-  color: #fff;
-  display: flex;
-  flex-wrap: nowrap;
-  list-style: none;
-  margin-top: 50px;
-  padding: 0;
-  width: 100%;
-}
-
-.navigationSlider .slidingNav.slidingNavActive ul {
-  display: block;
-}
-
-.navigationSlider .slidingNav ul li {
-  flex: 1 1 auto;
-  margin: 0;
-  text-align: center;
-  white-space: nowrap;
-}
-
-.navigationSlider .slidingNav ul li a {
-  align-items: center;
-  box-sizing: border-box;
-  color: #2E8555;
-  color: inherit;
-  display: flex;
-  font-size: 0.9em;
-  height: auto;
-  height: 50px;
-  justify-content: center;
-  margin: 0;
-  padding: 10px;
-  transition: background-color 0.3s;
-}
-
-.navigationSlider .slidingNav ul li a:focus,
-.navigationSlider .slidingNav ul li a:hover,
-.navigationSlider .slidingNav ul li.siteNavItemActive a,
-.navigationSlider .slidingNav ul li.siteNavGroupActive a {
-  background: #2E8555;
-}
-/* End of Navigation Slider */
-
-.navPusher {
-  left: 0;
-  min-height: 100%;
-  padding-top: 100px;
-  position: relative;
-  z-index: 99;
-}
-
-.singleRowMobileNav.navPusher {
-  padding-top: 50px;
-}
-
-.navPusher:after {
-  background: rgba(0, 0, 0, 0.4);
-  content: '';
-  height: 0;
-  opacity: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  -webkit-transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
-  transition: opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
-  width: 0;
-}
-
-@media screen and (min-width: 1024px) {
-  .navPusher {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    min-height: calc(100vh - 50px);
-    padding-top: 50px;
-  }
-
-  /* those make the footer sticky and work even in IE 11 */
-  .navPusher > :first-child {
-    flex-grow: 1;
-  }
-}
-
-.sliderActive .navPusher:after {
-  height: 100%;
-  opacity: 1;
-  -webkit-transition: opacity 0.5s;
-  transition: opacity 0.5s;
-  width: 100%;
-  z-index: 100;
-}
-
-@media only screen and (max-width: 1024px) {
-  .reactNavSearchWrapper input#search_input_react {
-    background-color: rgba(242, 196, 178, 0.25);
-    border: none;
-    border-radius: 20px;
-    box-sizing: border-box;
-    color: #393939;
-    font-size: 14px;
-    line-height: 20px;
-    outline: none;
-    padding-left: 38px;
-    position: relative;
-    transition: background-color 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55),
-      width 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55), color 0.2s ease;
-    width: 100%;
-  }
-
-  .reactNavSearchWrapper input#search_input_react:focus,
-  .reactNavSearchWrapper input#search_input_react:active {
-    background-color: #2E8555;
-    color: #fff;
-  }
-
-  .reactNavSearchWrapper .algolia-docsearch-suggestion--subcategory-inline {
-    display: none;
-  }
-
-  .reactNavSearchWrapper > span {
-    width: 100%;
-  }
-
-  .reactNavSearchWrapper .aa-dropdown-menu {
-    font-size: 12px;
-    line-height: 2em;
-    padding: 0;
-    border-width: 1px;
-    min-width: 500px;
-  }
-  .reactNavSearchWrapper .algolia-docsearch-suggestion__secondary {
-    border-top: none;
-  }
-  .aa-suggestions {
-    min-height: 140px;
-    max-height: 60vh;
-    -webkit-overflow-scrolling: touch;
-    overflow-y: scroll;
-  }
-
-  #languages-dropdown {
-    left: 0px;
-    top: 50px;
-  }
-
-  #languages-dropdown-items {
-    background-color: #2E8555;
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .navSearchWrapper {
-    padding-left: 10px;
-    position: relative;
-    right: auto;
-    top: auto;
-  }
-
-  .reactNavSearchWrapper input#search_input_react {
-    height: 100%;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 38px;
-  }
-
-  .navSearchWrapper .algolia-autocomplete {
-    display: block;
-  }
-
-  .navigationSlider {
-    height: 34px;
-    margin-left: auto;
-    position: relative;
-  }
-
-  .navigationSlider .navSlideout {
-    display: none;
-  }
-
-  .navigationSlider nav.slidingNav {
-    background: none;
-    height: auto;
-    position: relative;
-    right: auto;
-    top: auto;
-    width: auto;
-  }
-
-  .navigationSlider .slidingNav ul {
-    background: none;
-    display: flex;
-    flex-flow: row nowrap;
-    margin: 0;
-    padding: 0;
-    width: auto;
-  }
-
-  .navigationSlider .slidingNav ul li a {
-    border: 0;
-    color: rgba(255, 255, 255, 0.8);
-    display: flex;
-    font-size: 16px;
-    /* font-size: 1em; */
-    font-weight: 300;
-    height: 32px;
-    line-height: 1.2em;
-    margin: 0;
-    padding: 0;
-    padding: 6px 10px;
-  }
-
-  .navigationSlider .slidingNav ul li a:hover,
-  .navigationSlider .slidingNav ul li.siteNavItemActive a,
-  .navigationSlider .slidingNav ul li.siteNavGroupActive a {
-    color: #fff;
-  }
-}
-
-@media only screen and (max-width: 735px) {
-  .navigationSlider .slidingNav ul {
-    overflow-x: auto;
-  }
-  .navigationSlider .slidingNav ul::-webkit-scrollbar {
-    display: none;
-  }
-  .reactNavSearchWrapper .aa-dropdown-menu {
-    min-width: 400px;
-  }
-}
-@media only screen and (max-width: 475px) {
-  .reactNavSearchWrapper .aa-dropdown-menu {
-    min-width: 300px;
-  }
-}
-
-
-/************Navbar Custom****************/
-.fixedHeaderContainer{
-    background-color: #333;
-    padding: 9px 20px;
-}
-
-.toc .toggleNav .navGroup .navGroupCategoryTitle{
-    font-size: 16px;
-    font-weight: 600;
-}
-
-.navigationSlider .slidingNav ul li a:focus, .navigationSlider .slidingNav ul li a:hover, .navigationSlider .slidingNav ul li.siteNavItemActive a, .navigationSlider .slidingNav ul li.siteNavGroupActive a{
-    background-color: #777;
-    border-radius: 3px;
-    box-shadow:  0 0 5px #333;
-}
-
-
-/*************HomeContainer*************/
-.mainContainer{
-  /* padding-top: 50px; */
-  padding:50px 50px;
-  padding-top: 100px;
-}
-
-@media only screen and (max-width: 1024px) {
-  .mainContainer{
-    padding-top: 100px;
-  }
-}
-
-
-/********************Tutorial Section*********************/
-.mainContainer .wrapper .post {
-  position: relative;
-}
-
-.mainContainer .wrapper .post.basicPost {
-  margin-top: 30px;
-}
-
-.mainContainer .wrapper .post .postHeader {
-  margin-bottom: 16px;
-}
-
-.mainContainer .wrapper .post .postHeaderTitle {
-  margin-top: 0;
-  padding: 0;
-}
-
-.tutorial-contribute{
-    cursor: pointer;
-    color: #363835;
-    position: absolute;
-    top:5px;
-    font-size: 18px;
-    right:10%;
-    padding:10px 20px;
-    border-radius:15px;
-    border:none;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: cubic-bezier();
-    transition-duration: .3s;
-}
-
-.tutorial-contribute:hover{
-    color: #302f2f;
-    background-color: #f7f7f7;
-    text-decoration: none;
-}
-
-.tutorialContainer{
-
-}
-
-.tutorialBoxIN{
-  max-width: 1100px;
-  padding: 25px 24px;
-    margin: 35px 5px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
-.tutorialHeading{
-    font-size: 22px;
-    font-weight: 600;
-}
-
-.tutorialLink{
-  font-size: 20px;
-  color: #333;
-  font-weight: 600;
-}
-
-.tutorialLink:hover{
-  text-decoration: none;
-  color: #333;
-}
-
-.tutorialDesc{
-  font-size: 14px;
-    padding-bottom: 10px;
-}
-
-.tutorialDetails{
-    font-size: 13px;
-    font-weight: 400;
-}
-
-.tutorialDetailsName{
-    font-weight: 500;
-}
-
-.tutorialDetailsDate{
-    font-weight: 400;
-}
-
-.choiceList{
-  padding: 4px 8px;
-  margin: 0px 5px;
-  background-color: #333;
-  color: #f1f1f1;
-  border-radius: 5px;
-}
-
-/* Start of Footer */
-.nav-footer {
-  background: #20232a;
-  border: none;
-  color: #202020;
-  font-size: 15px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  line-height: 24px;
-  padding-bottom: 2em;
-  padding-top: 2em;
-  position: relative;
-}
-
-@media only screen and (min-width: 1024px) {
-  .nav-footer {
-    flex-shrink: 0;
-  }
-}
-
-.nav-footer .sitemap {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto 3em;
-  max-width: 1080px;
-}
-
-.nav-footer .sitemap div {
-  flex: 1;
-}
-
-.nav-footer .sitemap .nav-home {
-  display: table;
-  height: 72px;
-  margin: -12px 20px 0 0;
-  opacity: 0.4;
-  padding: 10px;
-  transition: opacity 0.15s ease-in-out;
-  width: 72px;
-}
-
-.nav-footer .sitemap .nav-home:hover,
-.nav-footer .sitemap .nav-home:focus {
-  opacity: 1;
-}
-
-@media only screen and (max-width: 735px) {
-  .nav-footer .sitemap {
-    display: flex;
-    flex-direction: column;
-    margin: 0 2em 3em;
-    width: calc(100% - 4em);
-  }
-
-  .nav-footer .sitemap > div {
-    margin-bottom: 18px;
-  }
-}
-
-.nav-footer .sitemap a {
-  color: rgba(255, 255, 255, 0.6);
-  display: block;
-  margin: 2px -10px;
-  padding: 3px 10px;
-}
-
-.nav-footer .sitemap a:hover,
-.nav-footer .sitemap a:focus {
-  color: white;
-  text-decoration: none;
-}
-
-.nav-footer .sitemap h5 > a:hover,
-.nav-footer .sitemap h5 > a:focus {
-  color: white;
-  text-decoration: none;
-}
-
-.nav-footer .sitemap h5,
-.nav-footer .sitemap h6 {
-  margin: 0 0 10px;
-}
-
-.nav-footer .sitemap h5 {
-  color: white;
-}
-
-.nav-footer .sitemap h6,
-.nav-footer .sitemap h5 > a,
-.nav-footer .sitemap h6 > a {
-  color: white;
-}
-
-.nav-footer .sitemap h5 > a,
-.nav-footer .sitemap h6 > a {
-  margin: 0 -10px;
-}
-
-.nav-footer .fbOpenSource {
-  display: block;
-  margin: 1em auto;
-  opacity: 0.4;
-  transition: opacity 0.15s ease-in-out;
-  width: 170px;
-}
-
-.nav-footer .fbOpenSource:hover {
-  opacity: 1;
-}
-
-.nav-footer .copyright {
-  color: rgba(255, 255, 255, 0.4);
-  text-align: center;
-}
-
-.nav-footer .social {
-  padding: 5px 0;
-}
-
-.wrapper-support{
-    padding: 0 2rem;
-}
-
-.supportLinks{
-    margin: 0 auto;
-    display: flex;
-}
-
-.supportLinks-container{
-    display: flex;
-    width: 100%;
-}
-
-.supportLinks-box{
-    flex:1 1 auto;
-    padding-top: 1rem;
-    background-color: rgb(241, 241, 241);
-    margin: 1rem;
-    padding: 1rem;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-    /* -webkit-box-shadow: 0 10px 6px -6px #777;
-    -moz-box-shadow: 0 10px 6px -6px #777;
-    box-shadow: 0 10px 6px -6px #777; */
-}
-
-.supportLinks-box:hover {
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-    cursor: pointer;
-  }
-
-  .supportLinks-box-link{
-      color: inherit;
-  }
-
-.supportLinks-box-img{
-    text-align: center;
-    margin: 0 auto;
-}
-
-.supportLinks-box-heading{
-    padding-top: 8px;
-    font-size: 14px;
-}
-
-.supportLinks-gitter-pic{
-    height: 16px;
-    /* fill: #ed1965; */
-    fill: #e7e6e6;
-    
-}
-
-.supportLinks-stackoverflow-pic{
-    height: 16px;
-    /* fill: #222426; */
-    fill: #e7e6e6;
-}
-
-.supportLinks-github-pic{
-    height: 16px;
-    /* fill: #333; */
-    fill: #e7e6e6;
-}
-
-.supportLinks-reddit-pic{
-    height: 16px;
-    /* fill: #ff4500; */
-    fill: #e7e6e6;
-}
-
-.supportLinks-telegram-pic{
-    height: 50px;
-    /* fill: #0088cc; */
-    fill: #e7e6e6;
-}
-
-.tutorialTag{
-  width: 16px;
-}
-
-
-
-/* End of Footer */
   </style>
-    <!-- <link rel="stylesheet" type="text/html" href="/css/main.css"> -->
-    
-<script>
+  <!-- <link rel="stylesheet" type="text/html" href="/css/main.css"> -->
 
-function getBearerData(callback) {
-  $.getJSON('./img/js/authenticate.json', function(data) {
-    dataValue = data;
-    callback(data);
-  });
-}
 
-combinedData(function(data) {
-  getData(data.Bearer).then((result) => {
-    console.log(result);
-    let approvedArray = Object.keys(data.ApprovedTutorials).map(function(key) {
-      return data.ApprovedTutorials[key];
-    });
-    for (let i = 0; i < result.total_items; i++) {
-      for (let j = approvedArray.length - 1; j >= 0; j--) {
-        if (approvedArray[j].emailId == result.items[i].answers[3].text && approvedArray[j].title == result.items[i].answers[0].text) {
-          let radioOptions = _.flattenDeep(result.items[i].answers[5].choices.labels);
-          $("<a class='tutorialLink' href=" + result.items[i].answers[4].url + " target='_blank'><div class='tutorialBoxIN'>"+
-            "<div class='tutorialHeading' id='tutorialHeading'> " + result.items[i].answers[0].text + "</div> " +
-            "<div class='tutorialDesc' id='tutorialDesc'> " + result.items[i].answers[1].text + "</div> "+
-            "<div class='tutorialDetails' id='tutorialDetails'>Published by - <span id='tutorialDetailsAuthor' class='tutorialDetailsAuthor'><b> " + result.items[i].answers[2].text + 
-            "</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span className='tutorialDetailsType' id='tutorialDetailsType'><b>" +  getChoices(Object.values(result.items[i].answers[5].choices)) + "</b></span> <span class='tutorialDetailsDate'> &nbsp;&nbsp;&nbsp;Posted on: <b>" + getSubmitDate(result.items[i].submitted_at) + " </b></span></div>" +
-          '</div></a>').appendTo('#tutorialContainer')
-          }
-        }
-      }
-
-      function getChoices(data) {
-        data = data + "";
-        data = data.split(',');
-        let outputData = "";
-        for(let x=0; x<data.length; x++){
-          output = "<span class='choiceList'>" + data[x] + "</span>";
-          outputData = outputData + output;
-        }
-        return outputData;
-      }
-
-      function getSubmitDate(data) {
-        let date = data.substring(0, data.indexOf('T'));
-        var year = date.substring(0, 4);
-        var month = date.substring(5,7);
-        if(date.substring(5,6) == 0){
-          month = date.substring(6,7);
-        }
-        var day = date.substring(8, 11);
-        var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'];
-        month = months[month];
-        return day +", "+ month +" "+ year;
-      }
-  }).catch((error)=> {
-    console.log(error);
-  });
-})
-
-function getData(bearer) {
-  return fetch('https://api.typeform.com/forms/BknR0R/responses?since=2019-03-01T00%3A00%3A00&until=2020-07-10T00%3A00%3A00', {
-        method: "GET", // *GET, POST, PUT, DELETE, etc.
-        mode: "cors", // no-cors, cors, *same-origin
-        headers: {
-            "Content-Type": "application/json",
-            "authorization": `bearer ${bearer}`,
-        },
-  }).then(response => response.json());
-}
-
-function combinedData(callback) {
-  getBearerData(function(data) {
-    getVerifiedTutorials(function(verifiedTutorials) {
-      callback({
-        "Bearer": data.Bearer,
-        "ApprovedTutorials": verifiedTutorials
-      });
-    })
-  })
-}
-
-function getVerifiedTutorials(callback) {
-  $.getJSON('./img/js/verifiedTutorials.json', function(data) {
-    callback(data);
-  });
-}
-
-</script>
-
-<!--Bootstrap-->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 
 </head>
+
 <body>
   <div class="fixedHeaderContainer">
     <div class="headerWrapper wrapper">
@@ -948,7 +44,7 @@ function getVerifiedTutorials(callback) {
         <div class="navigationWrapper navigationSlider">
           <nav class="slidingNav">
             <ul class="nav-site nav-site-internal">
-              <li class=""><a href="/docs/intro/creating-account" target="_self" style="font-size='14px'" >Docs</a></li>
+              <li class=""><a href="/docs/intro/creating-account" target="_self" style="font-size='14px'">Docs</a></li>
               <li class=""><a href="/tutorials" target="_self">Tutorials</a></li>
               <li class=""><a href="http://community.terminal.co" target="_self">Support</a></li>
             </ul>
@@ -958,53 +54,108 @@ function getVerifiedTutorials(callback) {
     </div>
   </div>
   <div class="mainContainer">
-      <div class="wrapper">
-          <div class="post">
-              <div class="row">
-                <div class="col-md-6">
-                    <h3>Tutorials</h3>
-                </div>
-                <div class="col-md-6 clearfix">
-                  <div style="float=right;" class="clearfix">
-                    <!-- hello -->
-                      <a href="https://terminalco.typeform.com/to/BknR0R" target="_blank" class="tutorial-contribute">Contribute a Tutorial</a>                    
-                  </div>
-                </div>
-              </div>
-            <!-- <p>Tutorials on this page</p> -->
-
-            <div class="tutorialContainer" id="tutorialContainer">
-              <div class="tutorialBox" id="tutorialBox"></div>
+    <div class="wrapper">
+      <div class="post">
+        <div class="row tutorialHeader">
+          <div class="col-md-6">
+            <h3>Tutorials</h3>
+          </div>
+          <div class="col-md-6">
+            <div style="text-align:right;">
+              <a href="https://terminalco.typeform.com/to/BknR0R" target="_blank" class="tutorial-contribute">Contribute
+                a Tutorial</a>
             </div>
-          
-      </div>
-  </div>
-</div>
+          </div>
+        </div>
+        <div class="tutorialContainer" id="tutorialContainer">
+          <div class="filterBox" style="display:none">
+            <div class="filterHeading">Filter by</div>
+            <div class="row">
+              <div class="col-md-6">
+                <span class="authorListfilterHeading">Author: </span>
+                <select class="authorListfilter form-control" id="authorListfiltervalue">
+                  <option class="filtervalue" value="">-Select-</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <span class="contentTypefilterHeading">Content Type: </span>
+                <select class="contentTypefilter form-control" id="contentTypefiltervalue">
+                  <option class="filtervalue" value="">-Select-</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="tutorialBox" id="tutorialBox"></div>
+          <div id="paginate" style="display:none">
+            <div class="page_number" page_number="1" id="prev">
+              Prev
+            </div>
+            <div id="count"></div>
+            <div class="page_number" page_number="2" id="next">
+              Next
+            </div>
+          </div>
+        </div>
 
-<footer class="nav-footer" id="footer">
-  <section class="sitemap">
-    <a href="/" class="nav-home">
-      <img src="/img/terminal-logo-footer.png" alt="Terminal" width="53" height="58">
-    </a>
-    <div>
-      <a href="./docs/intro/creating-account" style="font-size=14px; font-weight=600">Docs</a>
-      <a href="./docs/intro/creating-account.html">Getting Started</a>
-      <a href="./docs/apis/apis-creation">API Reference</a>
+      </div>
     </div>
-    <div>
-      <h5 style="font-size:14px; font-weight=600">Community</h5>
-      <a href="http://localhost:7000"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="supportLinks-gitter-pic"><path d="M66.4 322.5H16V0h50.4v322.5zM166.9 76.1h-50.4V512h50.4V76.1zm100.6 0h-50.4V512h50.4V76.1zM368 76h-50.4v247H368V76z"></path></svg>&nbsp;&nbsp;&nbsp;Gitter </a>
-      <a href="http://localhost:7000"><svg class="supportLinks-stackoverflow-pic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M290.7 311L95 269.7 86.8 309l195.7 41zm51-87L188.2 95.7l-25.5 30.8 153.5 128.3zm-31.2 39.7L129.2 179l-16.7 36.5L293.7 300zM262 32l-32 24 119.3 160.3 32-24zm20.5 328h-200v39.7h200zm39.7 80H42.7V320h-40v160h359.5V320h-40z"></path></svg>&nbsp;&nbsp;&nbsp;stack overflow </a>
-      <a href="http://localhost:7000"><svg class="supportLinks-github-pic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>&nbsp;&nbsp;&nbsp;GitHub </a>
-      <a href="http://localhost:7000"><svg class="supportLinks-reddit-pic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M440.3 203.5c-15 0-28.2 6.2-37.9 15.9-35.7-24.7-83.8-40.6-137.1-42.3L293 52.3l88.2 19.8c0 21.6 17.6 39.2 39.2 39.2 22 0 39.7-18.1 39.7-39.7s-17.6-39.7-39.7-39.7c-15.4 0-28.7 9.3-35.3 22l-97.4-21.6c-4.9-1.3-9.7 2.2-11 7.1L246.3 177c-52.9 2.2-100.5 18.1-136.3 42.8-9.7-10.1-23.4-16.3-38.4-16.3-55.6 0-73.8 74.6-22.9 100.1-1.8 7.9-2.6 16.3-2.6 24.7 0 83.8 94.4 151.7 210.3 151.7 116.4 0 210.8-67.9 210.8-151.7 0-8.4-.9-17.2-3.1-25.1 49.9-25.6 31.5-99.7-23.8-99.7zM129.4 308.9c0-22 17.6-39.7 39.7-39.7 21.6 0 39.2 17.6 39.2 39.7 0 21.6-17.6 39.2-39.2 39.2-22 .1-39.7-17.6-39.7-39.2zm214.3 93.5c-36.4 36.4-139.1 36.4-175.5 0-4-3.5-4-9.7 0-13.7 3.5-3.5 9.7-3.5 13.2 0 27.8 28.5 120 29 149 0 3.5-3.5 9.7-3.5 13.2 0 4.1 4 4.1 10.2.1 13.7zm-.8-54.2c-21.6 0-39.2-17.6-39.2-39.2 0-22 17.6-39.7 39.2-39.7 22 0 39.7 17.6 39.7 39.7-.1 21.5-17.7 39.2-39.7 39.2z"></path></svg>&nbsp;&nbsp;&nbsp;Reddit </a>
-    </div>
-    <div>
-      <h5 style="font-size:14px; font-weight:600">Socials</h5>
-      <a href="http://localhost:7000"><svg class="supportLinks-github-pic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>&nbsp;&nbsp;&nbsp;Twitter </a>
-      <a href="http://localhost:7000"><svg class="supportLinks-github-pic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path></svg>&nbsp;&nbsp;&nbsp;Telegram </a>
-    </div>
-  </section>
-  <section class="copyright">Copyright © 2019 Terminal.co</section>
-</footer>
+  </div>
+
+  <footer class="nav-footer" id="footer">
+    <section class="sitemap">
+      <a href="/" class="nav-home">
+        <img src="/img/terminal-logo-footer.png" alt="Terminal" width="53" height="58">
+      </a>
+      <div>
+        <a href="./docs/intro/creating-account" style="font-size=14px; font-weight=600">Docs</a>
+        <a href="./docs/intro/creating-account.html">Getting Started</a>
+        <a href="./docs/apis/apis-creation">API Reference</a>
+      </div>
+      <div>
+        <h5 style="font-size:14px; font-weight=600">Community</h5>
+        <a href="http://localhost:7000"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+            class="supportLinks-gitter-pic">
+            <path
+              d="M66.4 322.5H16V0h50.4v322.5zM166.9 76.1h-50.4V512h50.4V76.1zm100.6 0h-50.4V512h50.4V76.1zM368 76h-50.4v247H368V76z">
+            </path>
+          </svg>&nbsp;&nbsp;&nbsp;Gitter </a>
+        <a href="http://localhost:7000"><svg class="supportLinks-stackoverflow-pic" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 384 512">
+            <path
+              d="M290.7 311L95 269.7 86.8 309l195.7 41zm51-87L188.2 95.7l-25.5 30.8 153.5 128.3zm-31.2 39.7L129.2 179l-16.7 36.5L293.7 300zM262 32l-32 24 119.3 160.3 32-24zm20.5 328h-200v39.7h200zm39.7 80H42.7V320h-40v160h359.5V320h-40z">
+            </path>
+          </svg>&nbsp;&nbsp;&nbsp;stack overflow </a>
+        <a href="http://localhost:7000"><svg class="supportLinks-github-pic" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 496 512">
+            <path
+              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+            </path>
+          </svg>&nbsp;&nbsp;&nbsp;GitHub </a>
+        <a href="http://localhost:7000"><svg class="supportLinks-reddit-pic" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512">
+            <path
+              d="M440.3 203.5c-15 0-28.2 6.2-37.9 15.9-35.7-24.7-83.8-40.6-137.1-42.3L293 52.3l88.2 19.8c0 21.6 17.6 39.2 39.2 39.2 22 0 39.7-18.1 39.7-39.7s-17.6-39.7-39.7-39.7c-15.4 0-28.7 9.3-35.3 22l-97.4-21.6c-4.9-1.3-9.7 2.2-11 7.1L246.3 177c-52.9 2.2-100.5 18.1-136.3 42.8-9.7-10.1-23.4-16.3-38.4-16.3-55.6 0-73.8 74.6-22.9 100.1-1.8 7.9-2.6 16.3-2.6 24.7 0 83.8 94.4 151.7 210.3 151.7 116.4 0 210.8-67.9 210.8-151.7 0-8.4-.9-17.2-3.1-25.1 49.9-25.6 31.5-99.7-23.8-99.7zM129.4 308.9c0-22 17.6-39.7 39.7-39.7 21.6 0 39.2 17.6 39.2 39.7 0 21.6-17.6 39.2-39.2 39.2-22 .1-39.7-17.6-39.7-39.2zm214.3 93.5c-36.4 36.4-139.1 36.4-175.5 0-4-3.5-4-9.7 0-13.7 3.5-3.5 9.7-3.5 13.2 0 27.8 28.5 120 29 149 0 3.5-3.5 9.7-3.5 13.2 0 4.1 4 4.1 10.2.1 13.7zm-.8-54.2c-21.6 0-39.2-17.6-39.2-39.2 0-22 17.6-39.7 39.2-39.7 22 0 39.7 17.6 39.7 39.7-.1 21.5-17.7 39.2-39.7 39.2z">
+            </path>
+          </svg>&nbsp;&nbsp;&nbsp;Reddit </a>
+      </div>
+      <div>
+        <h5 style="font-size:14px; font-weight:600">Socials</h5>
+        <a href="http://localhost:7000"><svg class="supportLinks-github-pic" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512">
+            <path
+              d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z">
+            </path>
+          </svg>&nbsp;&nbsp;&nbsp;Twitter </a>
+        <a href="http://localhost:7000"><svg class="supportLinks-github-pic" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512">
+            <path
+              d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z">
+            </path>
+          </svg>&nbsp;&nbsp;&nbsp;Telegram </a>
+      </div>
+    </section>
+    <section class="copyright">Copyright © 2019 Terminal.co</section>
+  </footer>
 </body>
+
 </html>
