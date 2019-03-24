@@ -1,4 +1,4 @@
-## terminal-documentation
+## Terminal Documentation Portal
 
 A Web3 tool-suite for protocol and dApp developers and their communities. 
 
@@ -6,7 +6,7 @@ A Web3 tool-suite for protocol and dApp developers and their communities.
 - Node ^8.0.0
 - npm ^5.6.0 
 
-## Setup
+## Setup Instructions
 - `git clone https://github.com/Terminal-Systems/technical-documentation.git` 
 - `cd website`
 - `npm install`
