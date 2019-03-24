@@ -1,40 +1,24 @@
 {
   "docs": {
-    "Getting Started": [
-      "intro/creating-account", 
-      "intro/adding-smart-contract", 
-      "intro/viewing-activity", 
-      "intro/creating-org-folder"
+    "The Basics": [
+      "basics/getting-started",
+      "basics/glossary",
+      "basics/creating-account",
+      "basics/dashboard-intro",
+      "basics/activity-feed",
+      "basics/transactions-intro",
+      "basics/adding-wallet"
     ],
-    "Wallet management & address book dApp tool": [
-      "wallet/adding-wallet",
-      "wallet/signing-transaction",
-      "wallet/saving-address"
+    "Universal Friendly Onboarding (UFO)": ["ufo/ufo-intro"],
+    "API Studio": [
+      "api-studio/api-intro",
+      "api-studio/web3-hooks",
+      "api-studio/api-transaction",
+      "api-studio/custom-data"
     ],
-    "Identity Creation (ERC-721 proxy identity)": [
-      "erc/create-erc-identity",
-      "erc/wallet-signatory",
-      "erc/active-wisi",
-      "erc/sign-transaction-wisi"
-    ],
-    "Permissions dApp tool": [
-      "dAppTool/adding-id",
-      "dAppTool/adding-members",
-      "dAppTool/manage-permission-access"
-    ],
-    "Web3 Hooks": [
-      "web3/web3-hooks-creation"
-    ],
-    "APIs": [
-      "apis/apis-creation",
-      "apis/apis-wisi"
-    ],
-    "Custom APIs": [
-      "customapis/customapis-creation"
-    ],
-    "Terminal Marketplace": [
-      "terminalmarketplace/terminalmarketplace-goto"
-    ]
+    "Network instances": ["networks/networks-intro", "networks/ganache"],
+    "Hex Hub Community": ["hexhub/hexhub-intro"],
+    "Terminal-ID": ["terminal-id/access-control", "terminal-id/wisi"]
   },
   "docs-other": {
     "First Category": ["doc4", "doc5"]

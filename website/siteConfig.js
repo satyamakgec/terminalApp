@@ -18,7 +18,7 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Terminal', // Title for your website.
+  title: '', // Title for your website.
   tagline: 'A terminal website',
   url: 'https://docs.terminal.co', // Your website URL
   baseUrl: '/', // Base URL for your project */
@@ -30,15 +30,14 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     // { search: true },
-    {doc: 'intro/creating-account', label: 'Docs'},
-    // {doc: 'apis/apis-creation', label: 'Tutorials'},
-    {page: 'tutorials', label: 'Tutorials'},
-    {href: 'http://community.terminal.co', label: 'Support'},
+    { doc: 'basics/getting-started', label: 'Docs' },
+    { href: '/api', label: 'API' },
+    { page: 'tutorials', label: 'Tutorials' },
+    { href: 'http://community.terminal.co', label: 'Community' },
     // {blog: true, label: 'Community'},
   ],
 
-  editUrl: "https://github.com/satyamakgec/terminalApp/tree/master/docs/",
-
+  editUrl: 'https://github.com/satyamakgec/terminalApp/tree/master/docs/',
   // If you have users set above, you add it here:
   users,
 
@@ -53,20 +52,7 @@ const siteConfig = {
     secondaryColor: '#3d5a80',
   },
 
-  /* Custom fonts for website */
-  /*
-  fonts: {
-    myFont: [
-      "nunito sans",
-      "Serif"
-    ],
-    // myOtherFont: [
-    //   "-apple-system",
-    //   "system-ui"
-    // ]
-  },*/
-
-  docsSideNavCollapsible: true,
+  docsSideNavCollapsible: false,
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} Terminal.co`,
@@ -96,7 +82,7 @@ const siteConfig = {
 
   // You may provide arbitrary config keys to be used as needed by your
   // template. For example, if you need your repo's URL...
-    repoUrl: 'https://github.com/satyamakgec/terminalApp/tree/master/docs',
+    repoUrl: 'https://github.com/satyamakgec/terminalApp/tree/master/docs/',
 };
 
 module.exports = siteConfig;
