@@ -18,7 +18,7 @@ const users = [
 ];
 
 const siteConfig = {
-  title: '', // Title for your website.
+  title: 'Terminal', // Title for your website.
   tagline: 'A terminal website',
   url: 'https://docs.terminal.co', // Your website URL
   baseUrl: '/', // Base URL for your project */
@@ -31,7 +31,7 @@ const siteConfig = {
   headerLinks: [
     { search: false },
     { doc: 'basics/getting-started', label: 'Docs' },
-    // { href: '/api', label: 'API' },
+    { href: '/api', label: 'API' },
     { page: 'tutorials', label: 'Tutorials' },
     { href: 'http://community.terminal.co', label: 'Community' },
     // {blog: true, label: 'Community'},

@@ -51,7 +51,7 @@ function autocomplete(inp, arr) {
                 inp.value = this.getElementsByTagName("input")[0].value;
                 /*close the list of autocompleted values,
                 (or any other open lists of autocompleted values:*/
-                closeAllLists();
+                // closeAllLists();
             });
             a.appendChild(b);
           }
