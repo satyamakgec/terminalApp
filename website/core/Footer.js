@@ -31,7 +31,7 @@ class Footer extends React.Component {
           <div>
             <h5>Docs</h5>
             <a href={this.docUrl('basics/getting-started')}>Getting Started</a>
-            <a href="/api">API Reference</a>
+            <a href="/docs/api-studio/api-intro">API Reference</a>
           </div>
           <div>
             <h5>Community</h5>
@@ -43,8 +43,11 @@ class Footer extends React.Component {
               >
                 <path d="M66.4 322.5H16V0h50.4v322.5zM166.9 76.1h-50.4V512h50.4V76.1zm100.6 0h-50.4V512h50.4V76.1zM368 76h-50.4v247H368V76z" />
               </svg>
-              &nbsp;&nbsp;&nbsp;Discourse{' '}
+              &nbsp;&nbsp;&nbsp;Gitter{' '}
             </a>
+            <a href="/">
+          <svg className="supportLinks-stackoverflow-pic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M290.7 311L95 269.7 86.8 309l195.7 41zm51-87L188.2 95.7l-25.5 30.8 153.5 128.3zm-31.2 39.7L129.2 179l-16.7 36.5L293.7 300zM262 32l-32 24 119.3 160.3 32-24zm20.5 328h-200v39.7h200zm39.7 80H42.7V320h-40v160h359.5V320h-40z"/></svg>
+          &nbsp;&nbsp;&nbsp;stack overflow </a>
             <a href="https://github.com/Terminal-Systems" target="_blank">
               <svg
                 className="supportLinks-github-pic"
@@ -55,7 +58,7 @@ class Footer extends React.Component {
               </svg>
               &nbsp;&nbsp;&nbsp;GitHub{' '}
             </a>
-            {/*<a href="http://localhost:7000">
+            <a href="/">
               <svg
                 className="supportLinks-reddit-pic"
                 xmlns="http://www.w3.org/2000/svg"
@@ -64,10 +67,7 @@ class Footer extends React.Component {
                 <path d="M440.3 203.5c-15 0-28.2 6.2-37.9 15.9-35.7-24.7-83.8-40.6-137.1-42.3L293 52.3l88.2 19.8c0 21.6 17.6 39.2 39.2 39.2 22 0 39.7-18.1 39.7-39.7s-17.6-39.7-39.7-39.7c-15.4 0-28.7 9.3-35.3 22l-97.4-21.6c-4.9-1.3-9.7 2.2-11 7.1L246.3 177c-52.9 2.2-100.5 18.1-136.3 42.8-9.7-10.1-23.4-16.3-38.4-16.3-55.6 0-73.8 74.6-22.9 100.1-1.8 7.9-2.6 16.3-2.6 24.7 0 83.8 94.4 151.7 210.3 151.7 116.4 0 210.8-67.9 210.8-151.7 0-8.4-.9-17.2-3.1-25.1 49.9-25.6 31.5-99.7-23.8-99.7zM129.4 308.9c0-22 17.6-39.7 39.7-39.7 21.6 0 39.2 17.6 39.2 39.7 0 21.6-17.6 39.2-39.2 39.2-22 .1-39.7-17.6-39.7-39.2zm214.3 93.5c-36.4 36.4-139.1 36.4-175.5 0-4-3.5-4-9.7 0-13.7 3.5-3.5 9.7-3.5 13.2 0 27.8 28.5 120 29 149 0 3.5-3.5 9.7-3.5 13.2 0 4.1 4 4.1 10.2.1 13.7zm-.8-54.2c-21.6 0-39.2-17.6-39.2-39.2 0-22 17.6-39.7 39.2-39.7 22 0 39.7 17.6 39.7 39.7-.1 21.5-17.7 39.2-39.7 39.2z" />
               </svg>
               &nbsp;&nbsp;&nbsp;Reddit{' '}
-            </a>*/}
-            {/* <a href="http://localhost:7000">
-          <svg className="supportLinks-stackoverflow-pic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M290.7 311L95 269.7 86.8 309l195.7 41zm51-87L188.2 95.7l-25.5 30.8 153.5 128.3zm-31.2 39.7L129.2 179l-16.7 36.5L293.7 300zM262 32l-32 24 119.3 160.3 32-24zm20.5 328h-200v39.7h200zm39.7 80H42.7V320h-40v160h359.5V320h-40z"/></svg>
-          &nbsp;&nbsp;&nbsp;stack overflow </a> */}
+            </a>
             {/* <h5>Community</h5>
             <a href={this.pageUrl('users.html', this.props.language)}>
               User Showcase
@@ -98,11 +98,11 @@ class Footer extends React.Component {
               </svg>
               &nbsp;&nbsp;&nbsp;Twitter{' '}
             </a>
-            {/*
-            <a href="http://localhost:7000" target="blank">
+            
+            <a href="/" target="blank">
             <svg className="supportLinks-github-pic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"/></svg>
             &nbsp;&nbsp;&nbsp;Telegram </a>
-              <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
+              {/* <a href={`${this.props.config.baseUrl}blog`}>Blog</a>
             <a href="https://github.com/">GitHub</a>
             <a
               className="github-button"
