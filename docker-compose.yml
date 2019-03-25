@@ -6,6 +6,7 @@ services:
     ports:
       - 3000:3000
       - 35729:35729
+      - 5000:5000
     volumes:
       - ./docs:/app/docs
       - ./website/blog:/app/website/blog
