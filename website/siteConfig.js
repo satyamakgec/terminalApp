@@ -18,7 +18,7 @@ const users = [
 ];
 
 const siteConfig = {
-  title: '', // Title for your website.
+  title: 'Terminal', // Title for your website.
   tagline: 'A terminal website',
   url: 'https://docs.terminal.co', // Your website URL
   baseUrl: '/', // Base URL for your project */
@@ -29,7 +29,7 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    // { search: true },
+    { search: false },
     { doc: 'basics/getting-started', label: 'Docs' },
     { href: '/api', label: 'API' },
     { page: 'tutorials', label: 'Tutorials' },
@@ -50,6 +50,23 @@ const siteConfig = {
   colors: {
     primaryColor: '#2E8555',
     secondaryColor: '#3d5a80',
+  },
+
+  fonts: {
+    myFont: [
+      'Nunito',
+      'Serif'
+    ],
+    myOtherFont: [
+      '-apple-system',
+      'system-ui'
+    ]
+  },
+
+  algolia: {
+    apiKey: '2c7f3669371a5ceef0069bcb7fb1083f',
+    indexName: 'terminal_co',
+    algoliaOptions: {}, // Optional, if provided by Algolia
   },
 
   docsSideNavCollapsible: false,
