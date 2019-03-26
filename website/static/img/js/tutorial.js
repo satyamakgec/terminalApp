@@ -188,7 +188,7 @@ function load_data(author, type, page_number) {
         var to_push = true;
         if (author) { // author filter
             filtered_author = author;
-            if (tutorials[i].author == author) {
+            if ((tutorials[i].author).toLowerCase() == author.toLowerCase()) {
                 if (type) { // type filter
                     filtered_type = type;
                     if (tutorials[i].contentType == type) {
