@@ -253,12 +253,12 @@ function load_view(filtered_data) {
                 "<div class='tutorialHeading' id='tutorialHeading'> " + filtered_data[i].title + "</div> " +
                 "<div class='tutorialDesc' id='tutorialDesc'> " + filtered_data[i].description + "</div> " +
                 "<div class='tutorialDetails' id='tutorialDetails'>Published by - <span id='tutorialDetailsAuthor' class='tutorialDetailsAuthor'><b> " + filtered_data[i].author +
-                "</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span className='tutorialDetailsType' id='tutorialDetailsType'><b>" + filtered_data[i].contentType + "</b></span> <span class='tutorialDetailsDate'> &nbsp;&nbsp;&nbsp;Posted on: <b>" + filtered_data[i].timestamp + " </b></span></div>" +
+                "</b></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span className='tutorialDetailsType' id='tutorialDetailsType'>Hosted on: <b>" + filtered_data[i].contentType + "</b></span> <span class='tutorialDetailsDate'> &nbsp;&nbsp;&nbsp;Posted on: <b>" + filtered_data[i].timestamp + " </b></span></div>" +
                 '</div></a>').appendTo('#tutorialBox');
         }
         $('.filterBox').show();
     } else {
-        $('#tutorialBox').html('<div class="noData" style="text-align:center;padding: 5rem 0;">No data found</div>');
+        $('#tutorialBox').html('<div class="noData" style="text-align:center;padding: 5rem 0;padding-bottom:7rem">No data found</div>');
     }
 
 }
