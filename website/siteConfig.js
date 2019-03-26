@@ -29,12 +29,10 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    { search: false },
     { doc: 'basics/getting-started', label: 'Docs' },
     { href: '/api', label: 'API' },
     { page: 'tutorials', label: 'Tutorials' },
     { href: 'http://community.terminal.co', label: 'Community' },
-    // {blog: true, label: 'Community'},
   ],
 
   editUrl: 'https://github.com/satyamakgec/terminalApp/tree/master/docs/',
@@ -48,7 +46,7 @@ const siteConfig = {
 
   /* Colors for website */
   colors: {
-    primaryColor: '#2E8555',
+    primaryColor: '#333333',
     secondaryColor: '#3d5a80',
   },
 

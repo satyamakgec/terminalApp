@@ -232,7 +232,7 @@ body {
 .collapsible .arrow {
     margin-right: -8px;
 }
-
+/* 
 .toc .toggleNav .navToggle .toc .toggleNav .navToggle:before,
 .toc .toggleNav .navToggle:after {
     cursor: pointer;
@@ -251,7 +251,7 @@ body {
 
 .toc .toggleNav .navToggle:after {
     bottom: -10px;
-}
+} */
 
 
 /***********************Edit Button******************************/
@@ -366,6 +366,7 @@ body {
     background-position: right bottom;
     height: 330px;
     background-size: cover;
+    width: 100%;
 }
 
 .header_img {
@@ -376,10 +377,32 @@ body {
     right: 0px;
 }
 
+@media only screen and (max-width: 550px){
+    .navSearchWrapper {
+        /* display: none; */
+    }
+}
+
+
 @media only screen and (max-width: 1024px) {
     .header_img {
         width: 350px;
         top: 119px;
+    }
+
+    .navSearchWrapper{
+        position: relative;
+        top: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navSearchWrapper::before{
+        display: none;
+    }
+    
+    .navSearchWrapper::after{
+        display: none;
     }
 }
 
@@ -668,7 +691,7 @@ input#search_input_react:active {
     padding-left: 38px;
   }
 
-  @media only screen and (min-width: 360px) {
+  @media only screen and (min-width: 550px) {
     .navigationSlider {
         height: 34px;
         margin-left: auto;
@@ -771,5 +794,27 @@ input#search_input_react:active {
 }
 
 .navPusher {
-    padding-top: 0;
+    padding-top: 50px;
+}
+
+.nav-footer{
+    margin-top: 50vh;
+}
+
+.noData{
+    text-align: center;
+    padding: 3rem 0;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .slidingNav{
+        /* display: none; */
+        display: flex;
+    }
+
+    .slidingNav ul li{
+        /* display: none; */
+        display: flex;
+    }
 }
