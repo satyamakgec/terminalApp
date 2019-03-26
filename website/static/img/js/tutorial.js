@@ -258,7 +258,7 @@ function load_view(filtered_data) {
         }
         $('.filterBox').show();
     } else {
-        $('#tutorialBox').html('<div class="noData" style="text-align:center;padding: 5rem 0;padding-bottom:7rem">No data found</div>');
+        $('#tutorialBox').html('<div class="noData" style="font-weight:600;text-align:center;padding: 5rem 0;padding-bottom:7rem">No data found</div>');
     }
 
 }
